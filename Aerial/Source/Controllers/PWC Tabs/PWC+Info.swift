@@ -29,9 +29,6 @@ extension PreferencesWindowController {
             PrefsInfo.layers.append(.date)
         }
 
-        if !PrefsInfo.layers.contains(.weather) {
-            PrefsInfo.layers.append(.weather)
-        }
 
         // Annnd for backward compatibility with 1.7.2 betas, remove the updates that was once here ;)
         if PrefsInfo.layers.contains(.updates) {
@@ -91,10 +88,6 @@ extension PreferencesWindowController {
             infoBatteryView.setStates()
         case .updates:
             break
-        case .weather:
-            infoContainerView.addSubview(infoWeatherView)
-            infoWeatherView.frame.origin.y = infoCommonView.frame.height
-            infoWeatherView.setStates()
         case .countdown:
             infoContainerView.addSubview(infoCountdownView)
             infoCountdownView.frame.origin.y = infoCommonView.frame.height
@@ -109,25 +102,5 @@ extension PreferencesWindowController {
     // Clear the panel
     func resetInfoPanel() {
         infoContainerView.subviews.forEach({ $0.removeFromSuperview() })
-    }
-
-    func openWeatherPreview() {
-        if !weatherPanel.isVisible {
-            weatherPanel.makeKeyAndOrderFront(self)
-        }
-
-        if Weather.info != nil {
-            weatherLabel.stringValue = "\(Weather.info!.location) \n\n \(Weather.info!.currentObservation)"
-            let cond = ConditionLayer(condition: Weather.info!.currentObservation.condition)
-
-            weatherCustomView.layer = cond
-            weatherCustomView.wantsLayer = true
-        } else {
-            weatherLabel.stringValue = "City not found, please try again"
-        }
-    }
-
-    @IBAction func helpWeatherButtonClick(_ button: NSButton) {
-        popoverWeather.show(relativeTo: button.preparedContentRect, of: button, preferredEdge: .maxY)
     }
 }

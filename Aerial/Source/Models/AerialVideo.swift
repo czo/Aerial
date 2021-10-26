@@ -11,7 +11,7 @@ import AVFoundation
 
 enum Manifests: String {
     // swiftlint:disable:next line_length
-    case tvOS10 = "tvos10.json", tvOS11 = "tvos11.json", tvOS12 = "tvos12.json", tvOS13 = "tvos13.json", tvOS13Strings = "TVIdleScreenStrings13.bundle", customVideos = "customvideos.json"
+    case tvOS10 = "tvos10.json", tvOS11 = "tvos11.json", tvOS12 = "tvos12.json", tvOS13 = "tvos13.json", tvOS15 = "tvos15.json", tvOS13Strings = "TVIdleScreenStrings13.bundle", tvOS15Strings = "TVIdleScreenStrings15.bundle", customVideos = "customvideos.json"
 }
 
 private let spaceVideos = [

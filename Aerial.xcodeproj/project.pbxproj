@@ -8,466 +8,110 @@
 
 /* Begin PBXBuildFile section */
 		0306336823A1012200046A59 /* LocationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0306336723A1012200046A59 /* LocationLayer.swift */; };
-		0306336923A1026800046A59 /* LocationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0306336723A1012200046A59 /* LocationLayer.swift */; };
 		0306336B23A142FA00046A59 /* LayerOffsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0306336A23A142FA00046A59 /* LayerOffsets.swift */; };
-		0306336C23A143D900046A59 /* LayerOffsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0306336A23A142FA00046A59 /* LayerOffsets.swift */; };
 		0306336E23A15FA900046A59 /* AnimationTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0306336D23A15FA900046A59 /* AnimationTextLayer.swift */; };
 		030A0F23245C7924009E1D97 /* battery.0.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 030A0F0C245C7924009E1D97 /* battery.0.pdf */; };
-		030A0F24245C7924009E1D97 /* battery.0.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 030A0F0C245C7924009E1D97 /* battery.0.pdf */; };
 		030A0F29245C7C7D009E1D97 /* BatteryIconLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A0F28245C7C7D009E1D97 /* BatteryIconLayer.swift */; };
-		030A0F2A245C7C7D009E1D97 /* BatteryIconLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A0F28245C7C7D009E1D97 /* BatteryIconLayer.swift */; };
-		030D9B7C21551A8D00961E95 /* AerialPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E2E5D1FC62E8B00E5F320 /* AerialPlayerItem.swift */; };
 		030DDA902423C3BE0072D5C9 /* InfoTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030DDA8F2423C3BE0072D5C9 /* InfoTimerView.swift */; };
 		0313F9E622942AA500B074BB /* CustomVideos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0313F9E522942AA500B074BB /* CustomVideos.xib */; };
 		0313F9E822942B4500B074BB /* CustomVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9E722942B4500B074BB /* CustomVideoController.swift */; };
-		0313F9E92294337F00B074BB /* CustomVideos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0313F9E522942AA500B074BB /* CustomVideos.xib */; };
-		0313F9EA2294338300B074BB /* CustomVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9E722942B4500B074BB /* CustomVideoController.swift */; };
-		0313F9EC2294468600B074BB /* SeededGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9EB2294468600B074BB /* SeededGenerator.swift */; };
-		0313F9ED2294468600B074BB /* SeededGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9EB2294468600B074BB /* SeededGenerator.swift */; };
 		0313F9EF22955F3B00B074BB /* CustomVideoFolders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9EE22955F3B00B074BB /* CustomVideoFolders.swift */; };
-		0313F9F022955F3B00B074BB /* CustomVideoFolders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313F9EE22955F3B00B074BB /* CustomVideoFolders.swift */; };
 		03233B68217272640077D3F9 /* PoiStringProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03233B67217272640077D3F9 /* PoiStringProvider.swift */; };
-		03233B692172762C0077D3F9 /* PoiStringProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03233B67217272640077D3F9 /* PoiStringProvider.swift */; };
 		032D1161239A7D82007E7756 /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D1160239A7D82007E7756 /* Battery.swift */; };
-		032D1162239A7E03007E7756 /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D1160239A7D82007E7756 /* Battery.swift */; };
 		032D1164239A7F0C007E7756 /* AerialView+Brightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D1163239A7F0C007E7756 /* AerialView+Brightness.swift */; };
-		032D1165239A7F17007E7756 /* AerialView+Brightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D1163239A7F0C007E7756 /* AerialView+Brightness.swift */; };
 		033192E1217B78240073B580 /* en.json in Resources */ = {isa = PBXBuildFile; fileRef = 033192E0217B78240073B580 /* en.json */; };
-		033192E2217B78240073B580 /* en.json in Resources */ = {isa = PBXBuildFile; fileRef = 033192E0217B78240073B580 /* en.json */; };
-		033842E124489D7300A2C523 /* WeatherLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033842E024489D7300A2C523 /* WeatherLayer.swift */; };
-		033842F824489EC600A2C523 /* WeatherLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033842E024489D7300A2C523 /* WeatherLayer.swift */; };
 		033D62AB216CADCD00F3AF83 /* icon-day-dark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 033D62AA216CADCD00F3AF83 /* icon-day-dark.pdf */; };
-		033D62AC216CADCD00F3AF83 /* icon-day-dark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 033D62AA216CADCD00F3AF83 /* icon-day-dark.pdf */; };
-		033D62AD216CADCD00F3AF83 /* icon-day-dark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 033D62AA216CADCD00F3AF83 /* icon-day-dark.pdf */; };
 		033D62AF216CAE2C00F3AF83 /* icon-night-dark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 033D62AE216CAE2C00F3AF83 /* icon-night-dark.pdf */; };
-		033D62B0216CAE2C00F3AF83 /* icon-night-dark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 033D62AE216CAE2C00F3AF83 /* icon-night-dark.pdf */; };
-		033D62B1216CAE2C00F3AF83 /* icon-night-dark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 033D62AE216CAE2C00F3AF83 /* icon-night-dark.pdf */; };
-		033D68812453080C0016F837 /* ConditionSymbolLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D68802453080C0016F837 /* ConditionSymbolLayer.swift */; };
-		034116CC23F9AD0100CD7674 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034116B523F9ACE300CD7674 /* Sparkle.framework */; };
-		034116CD23F9AD0100CD7674 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 034116B523F9ACE300CD7674 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		034116CF23F9AD0600CD7674 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034116B523F9ACE300CD7674 /* Sparkle.framework */; };
-		034116D023F9AD0600CD7674 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 034116B523F9ACE300CD7674 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		034116D323F9BD3100CD7674 /* PrefsUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034116D223F9BD3100CD7674 /* PrefsUpdates.swift */; };
-		034116D423F9BD3100CD7674 /* PrefsUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034116D223F9BD3100CD7674 /* PrefsUpdates.swift */; };
-		034116D923FADE3600CD7674 /* UpdateReleaseWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 034116D823FADE3600CD7674 /* UpdateReleaseWindow.xib */; };
-		034116DA23FADE3600CD7674 /* UpdateReleaseWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 034116D823FADE3600CD7674 /* UpdateReleaseWindow.xib */; };
-		034116DC23FADEDA00CD7674 /* UpdateReleaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034116DB23FADEDA00CD7674 /* UpdateReleaseController.swift */; };
-		034116DD23FADEDA00CD7674 /* UpdateReleaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034116DB23FADEDA00CD7674 /* UpdateReleaseController.swift */; };
 		0345872D2449C52F00C97D1B /* AnimatableLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0345872C2449C52F00C97D1B /* AnimatableLayer.swift */; };
-		0345872E2449C59900C97D1B /* AnimatableLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0345872C2449C52F00C97D1B /* AnimatableLayer.swift */; };
 		034587322449D8EB00C97D1B /* AnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034587312449D8EB00C97D1B /* AnimationLayer.swift */; };
-		034587332449E22000C97D1B /* AnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034587312449D8EB00C97D1B /* AnimationLayer.swift */; };
-		0345A24B24532E4600DD47CD /* ConditionSymbolLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D68802453080C0016F837 /* ConditionSymbolLayer.swift */; };
 		034F29B423A7A79B004B34D5 /* PWC+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F29B323A7A79B004B34D5 /* PWC+Info.swift */; };
 		034F29B723A7A93D004B34D5 /* InfoTableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F29B623A7A93D004B34D5 /* InfoTableSource.swift */; };
-		034F29B823A7A9B3004B34D5 /* InfoTableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F29B623A7A93D004B34D5 /* InfoTableSource.swift */; };
-		034F29B923A7B0FC004B34D5 /* PWC+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F29B323A7A79B004B34D5 /* PWC+Info.swift */; };
 		034F29BF23A7E28E004B34D5 /* PrefsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F29BE23A7E28E004B34D5 /* PrefsInfo.swift */; };
-		034F29C023A7E58C004B34D5 /* PrefsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F29BE23A7E28E004B34D5 /* PrefsInfo.swift */; };
-		03510C6B21834EB2008F74F2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03510C6A21834EB2008F74F2 /* IOKit.framework */; };
 		03510C6C21834EFF008F74F2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03510C6A21834EB2008F74F2 /* IOKit.framework */; };
 		03510C6F21834F38008F74F2 /* IOBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 03510C6E21834F38008F74F2 /* IOBridge.m */; };
 		03510C7021834FC3008F74F2 /* Aerial-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 03510C6D21834F38008F74F2 /* Aerial-Bridging-Header.h */; };
-		03510C7121834FC7008F74F2 /* IOBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 03510C6E21834F38008F74F2 /* IOBridge.m */; };
 		03510C732185EF76008F74F2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03510C722185EF76008F74F2 /* CoreLocation.framework */; };
-		03510C772185EF8F008F74F2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03510C722185EF76008F74F2 /* CoreLocation.framework */; };
 		0354D0E923F6C31800D86F9E /* InfoSettingsTableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354D0E823F6C31800D86F9E /* InfoSettingsTableSource.swift */; };
-		0354D0EA23F6C3EE00D86F9E /* InfoSettingsTableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354D0E823F6C31800D86F9E /* InfoSettingsTableSource.swift */; };
 		0354D0EC23F6CB7B00D86F9E /* InfoSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354D0EB23F6CB7B00D86F9E /* InfoSettingsView.swift */; };
-		0354D0ED23F6CB7B00D86F9E /* InfoSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354D0EB23F6CB7B00D86F9E /* InfoSettingsView.swift */; };
 		035A92A6225F8C480095AB85 /* de.json in Resources */ = {isa = PBXBuildFile; fileRef = 035A92A4225F8C480095AB85 /* de.json */; };
-		035A92A7225F8C480095AB85 /* de.json in Resources */ = {isa = PBXBuildFile; fileRef = 035A92A4225F8C480095AB85 /* de.json */; };
 		035A92A8225F8C480095AB85 /* he.json in Resources */ = {isa = PBXBuildFile; fileRef = 035A92A5225F8C480095AB85 /* he.json */; };
-		035A92A9225F8C480095AB85 /* he.json in Resources */ = {isa = PBXBuildFile; fileRef = 035A92A5225F8C480095AB85 /* he.json */; };
 		035A92AC226754760095AB85 /* ar.json in Resources */ = {isa = PBXBuildFile; fileRef = 035A92AB226754760095AB85 /* ar.json */; };
-		035A92AD226754760095AB85 /* ar.json in Resources */ = {isa = PBXBuildFile; fileRef = 035A92AB226754760095AB85 /* ar.json */; };
 		035D524F239AA31A00DC29DC /* AerialView+Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035D524E239AA31A00DC29DC /* AerialView+Player.swift */; };
-		035D5250239AA31A00DC29DC /* AerialView+Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035D524E239AA31A00DC29DC /* AerialView+Player.swift */; };
 		03608A1022A54887008F08A2 /* PWC+Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A0F22A54887008F08A2 /* PWC+Videos.swift */; };
-		03608A1222A5499C008F08A2 /* PWC+Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A0F22A54887008F08A2 /* PWC+Videos.swift */; };
 		03608A1422A559F6008F08A2 /* PWC+Displays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A1322A559F6008F08A2 /* PWC+Displays.swift */; };
-		03608A1722A55B44008F08A2 /* PWC+Displays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A1322A559F6008F08A2 /* PWC+Displays.swift */; };
 		03608A1A22A55B9A008F08A2 /* PWC+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A1922A55B9A008F08A2 /* PWC+Time.swift */; };
-		03608A1B22A55B9A008F08A2 /* PWC+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A1922A55B9A008F08A2 /* PWC+Time.swift */; };
 		03608A1D22A55BA7008F08A2 /* PWC+Brightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A1C22A55BA7008F08A2 /* PWC+Brightness.swift */; };
-		03608A1E22A55BA7008F08A2 /* PWC+Brightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A1C22A55BA7008F08A2 /* PWC+Brightness.swift */; };
 		03608A2022A55BC2008F08A2 /* PWC+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A1F22A55BC2008F08A2 /* PWC+Cache.swift */; };
-		03608A2122A55BC2008F08A2 /* PWC+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A1F22A55BC2008F08A2 /* PWC+Cache.swift */; };
 		03608A2322A55BF1008F08A2 /* PWC+Updates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A2222A55BF1008F08A2 /* PWC+Updates.swift */; };
-		03608A2422A55BF1008F08A2 /* PWC+Updates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A2222A55BF1008F08A2 /* PWC+Updates.swift */; };
 		03608A2622A55C03008F08A2 /* PWC+Advanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A2522A55C03008F08A2 /* PWC+Advanced.swift */; };
-		03608A2722A55C03008F08A2 /* PWC+Advanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A2522A55C03008F08A2 /* PWC+Advanced.swift */; };
 		03608A2922A56094008F08A2 /* PWC+LogPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A2822A56094008F08A2 /* PWC+LogPanel.swift */; };
-		03608A2A22A56094008F08A2 /* PWC+LogPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A2822A56094008F08A2 /* PWC+LogPanel.swift */; };
 		03608A2C22A56465008F08A2 /* HardwareDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A2B22A56465008F08A2 /* HardwareDetection.swift */; };
-		03608A2D22A56465008F08A2 /* HardwareDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03608A2B22A56465008F08A2 /* HardwareDetection.swift */; };
 		0361B9A823D732A300B6252D /* PrefsDisplays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B9A723D732A300B6252D /* PrefsDisplays.swift */; };
-		0361B9A923D732A300B6252D /* PrefsDisplays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B9A723D732A300B6252D /* PrefsDisplays.swift */; };
 		0361B9AB23D73D4500B6252D /* PrefsTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B9AA23D73D4500B6252D /* PrefsTime.swift */; };
-		0361B9AC23D73D4500B6252D /* PrefsTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0361B9AA23D73D4500B6252D /* PrefsTime.swift */; };
 		0369985D2196103300E359D3 /* missingvideos.json in Resources */ = {isa = PBXBuildFile; fileRef = 0369985C2196103300E359D3 /* missingvideos.json */; };
-		0369985E2196129C00E359D3 /* missingvideos.json in Resources */ = {isa = PBXBuildFile; fileRef = 0369985C2196103300E359D3 /* missingvideos.json */; };
 		036A34B5227309FB00A49135 /* zh_CN.json in Resources */ = {isa = PBXBuildFile; fileRef = 036A34B4227309FB00A49135 /* zh_CN.json */; };
-		036A34B622730A0700A49135 /* zh_CN.json in Resources */ = {isa = PBXBuildFile; fileRef = 036A34B4227309FB00A49135 /* zh_CN.json */; };
-		036A34B722730A0700A49135 /* zh_CN.json in Resources */ = {isa = PBXBuildFile; fileRef = 036A34B4227309FB00A49135 /* zh_CN.json */; };
 		036A57D523F30DD00009DC02 /* UpdatesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A57D423F30DD00009DC02 /* UpdatesLayer.swift */; };
-		036A57D623F30F490009DC02 /* UpdatesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A57D423F30DD00009DC02 /* UpdatesLayer.swift */; };
 		036A57D823F470940009DC02 /* InfoCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A57D723F470940009DC02 /* InfoCountdownView.swift */; };
-		036A57D923F4747D0009DC02 /* InfoCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A57D723F470940009DC02 /* InfoCountdownView.swift */; };
 		036A57DB23F5820A0009DC02 /* CountdownLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A57DA23F5820A0009DC02 /* CountdownLayer.swift */; };
-		036A57DC23F5828E0009DC02 /* CountdownLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A57DA23F5820A0009DC02 /* CountdownLayer.swift */; };
 		0374C9FE247AC5BC002F29D3 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374C9FD247AC5BC002F29D3 /* Locations.swift */; };
-		0374C9FF247AC5BC002F29D3 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374C9FD247AC5BC002F29D3 /* Locations.swift */; };
-		0385FC59242B9AE1007E6513 /* APISecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385FC58242B9AE1007E6513 /* APISecrets.swift */; };
-		0385FC5A242B9AE1007E6513 /* APISecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385FC58242B9AE1007E6513 /* APISecrets.swift */; };
-		0385FC5D242B9F6E007E6513 /* InfoWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385FC5C242B9F6E007E6513 /* InfoWeatherView.swift */; };
-		0385FC6D242BA097007E6513 /* InfoWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385FC5C242B9F6E007E6513 /* InfoWeatherView.swift */; };
 		0387CA40245DC7A5000A7095 /* bolt.fill.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA3F245DC7A4000A7095 /* bolt.fill.pdf */; };
-		0387CA41245DC7A5000A7095 /* bolt.fill.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA3F245DC7A4000A7095 /* bolt.fill.pdf */; };
-		0387CA62245DE13A000A7095 /* wrench.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA42245DE138000A7095 /* wrench.pdf */; };
-		0387CA63245DE13A000A7095 /* wrench.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA42245DE138000A7095 /* wrench.pdf */; };
-		0387CA64245DE13A000A7095 /* sun.max.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA43245DE138000A7095 /* sun.max.pdf */; };
-		0387CA65245DE13A000A7095 /* sun.max.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA43245DE138000A7095 /* sun.max.pdf */; };
-		0387CA66245DE13A000A7095 /* wind.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA44245DE138000A7095 /* wind.pdf */; };
-		0387CA67245DE13A000A7095 /* wind.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA44245DE138000A7095 /* wind.pdf */; };
-		0387CA68245DE13A000A7095 /* moon.stars.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA45245DE138000A7095 /* moon.stars.pdf */; };
-		0387CA69245DE13A000A7095 /* moon.stars.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA45245DE138000A7095 /* moon.stars.pdf */; };
-		0387CA6A245DE13A000A7095 /* cloud.bolt.rain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA46245DE138000A7095 /* cloud.bolt.rain.pdf */; };
-		0387CA6B245DE13A000A7095 /* cloud.bolt.rain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA46245DE138000A7095 /* cloud.bolt.rain.pdf */; };
-		0387CA6C245DE13A000A7095 /* cloud.rain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA47245DE138000A7095 /* cloud.rain.pdf */; };
-		0387CA6D245DE13A000A7095 /* cloud.rain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA47245DE138000A7095 /* cloud.rain.pdf */; };
-		0387CA6E245DE13A000A7095 /* cloud.fog.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA48245DE138000A7095 /* cloud.fog.pdf */; };
-		0387CA6F245DE13A000A7095 /* cloud.fog.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA48245DE138000A7095 /* cloud.fog.pdf */; };
-		0387CA70245DE13A000A7095 /* thermometer.sun.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA49245DE138000A7095 /* thermometer.sun.pdf */; };
-		0387CA71245DE13A000A7095 /* thermometer.sun.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA49245DE138000A7095 /* thermometer.sun.pdf */; };
-		0387CA72245DE13A000A7095 /* snow.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA4A245DE138000A7095 /* snow.pdf */; };
-		0387CA73245DE13A000A7095 /* snow.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA4A245DE138000A7095 /* snow.pdf */; };
-		0387CA74245DE13A000A7095 /* cloud.sun.bolt.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA4B245DE139000A7095 /* cloud.sun.bolt.pdf */; };
-		0387CA75245DE13A000A7095 /* cloud.sun.bolt.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA4B245DE139000A7095 /* cloud.sun.bolt.pdf */; };
-		0387CA76245DE13A000A7095 /* tropicalstorm.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA4C245DE139000A7095 /* tropicalstorm.pdf */; };
-		0387CA77245DE13A000A7095 /* tropicalstorm.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA4C245DE139000A7095 /* tropicalstorm.pdf */; };
-		0387CA78245DE13A000A7095 /* hurricane.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA4D245DE139000A7095 /* hurricane.pdf */; };
-		0387CA79245DE13A000A7095 /* hurricane.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA4D245DE139000A7095 /* hurricane.pdf */; };
-		0387CA7A245DE13A000A7095 /* cloud.heavyrain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA4E245DE139000A7095 /* cloud.heavyrain.pdf */; };
-		0387CA7B245DE13A000A7095 /* cloud.heavyrain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA4E245DE139000A7095 /* cloud.heavyrain.pdf */; };
-		0387CA7C245DE13A000A7095 /* wind.snow.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA4F245DE139000A7095 /* wind.snow.pdf */; };
-		0387CA7D245DE13A000A7095 /* wind.snow.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA4F245DE139000A7095 /* wind.snow.pdf */; };
-		0387CA7E245DE13A000A7095 /* sun.min.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA50245DE139000A7095 /* sun.min.pdf */; };
-		0387CA7F245DE13A000A7095 /* sun.min.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA50245DE139000A7095 /* sun.min.pdf */; };
-		0387CA80245DE13A000A7095 /* cloud.moon.rain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA51245DE139000A7095 /* cloud.moon.rain.pdf */; };
-		0387CA81245DE13A000A7095 /* cloud.moon.rain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA51245DE139000A7095 /* cloud.moon.rain.pdf */; };
-		0387CA82245DE13A000A7095 /* cloud.drizzle.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA52245DE139000A7095 /* cloud.drizzle.pdf */; };
-		0387CA83245DE13A000A7095 /* cloud.drizzle.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA52245DE139000A7095 /* cloud.drizzle.pdf */; };
-		0387CA84245DE13A000A7095 /* cloud.moon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA53245DE139000A7095 /* cloud.moon.pdf */; };
-		0387CA85245DE13A000A7095 /* cloud.moon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA53245DE139000A7095 /* cloud.moon.pdf */; };
-		0387CA86245DE13A000A7095 /* cloud.sun.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA54245DE139000A7095 /* cloud.sun.pdf */; };
-		0387CA87245DE13A000A7095 /* cloud.sun.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA54245DE139000A7095 /* cloud.sun.pdf */; };
-		0387CA88245DE13A000A7095 /* moon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA55245DE139000A7095 /* moon.pdf */; };
-		0387CA89245DE13A000A7095 /* moon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA55245DE139000A7095 /* moon.pdf */; };
-		0387CA8A245DE13A000A7095 /* thermometer.snowflake.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA56245DE139000A7095 /* thermometer.snowflake.pdf */; };
-		0387CA8B245DE13A000A7095 /* thermometer.snowflake.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA56245DE139000A7095 /* thermometer.snowflake.pdf */; };
-		0387CA8C245DE13A000A7095 /* smoke.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA57245DE139000A7095 /* smoke.pdf */; };
-		0387CA8D245DE13A000A7095 /* smoke.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA57245DE139000A7095 /* smoke.pdf */; };
-		0387CA8E245DE13A000A7095 /* cloud.moon.bolt.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA58245DE139000A7095 /* cloud.moon.bolt.pdf */; };
-		0387CA8F245DE13A000A7095 /* cloud.moon.bolt.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA58245DE139000A7095 /* cloud.moon.bolt.pdf */; };
-		0387CA90245DE13A000A7095 /* tornado.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA59245DE13A000A7095 /* tornado.pdf */; };
-		0387CA91245DE13A000A7095 /* tornado.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA59245DE13A000A7095 /* tornado.pdf */; };
-		0387CA92245DE13A000A7095 /* sun.dust.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA5A245DE13A000A7095 /* sun.dust.pdf */; };
-		0387CA93245DE13A000A7095 /* sun.dust.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA5A245DE13A000A7095 /* sun.dust.pdf */; };
-		0387CA94245DE13A000A7095 /* cloud.sun.rain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA5B245DE13A000A7095 /* cloud.sun.rain.pdf */; };
-		0387CA95245DE13A000A7095 /* cloud.sun.rain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA5B245DE13A000A7095 /* cloud.sun.rain.pdf */; };
-		0387CA96245DE13A000A7095 /* cloud.bolt.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA5C245DE13A000A7095 /* cloud.bolt.pdf */; };
-		0387CA97245DE13A000A7095 /* cloud.bolt.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA5C245DE13A000A7095 /* cloud.bolt.pdf */; };
-		0387CA98245DE13A000A7095 /* sun.haze.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA5D245DE13A000A7095 /* sun.haze.pdf */; };
-		0387CA99245DE13A000A7095 /* sun.haze.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA5D245DE13A000A7095 /* sun.haze.pdf */; };
-		0387CA9A245DE13A000A7095 /* cloud.hail.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA5E245DE13A000A7095 /* cloud.hail.pdf */; };
-		0387CA9B245DE13A000A7095 /* cloud.hail.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA5E245DE13A000A7095 /* cloud.hail.pdf */; };
-		0387CA9C245DE13A000A7095 /* cloud.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA5F245DE13A000A7095 /* cloud.pdf */; };
-		0387CA9D245DE13A000A7095 /* cloud.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA5F245DE13A000A7095 /* cloud.pdf */; };
-		0387CA9E245DE13A000A7095 /* cloud.sleet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA60245DE13A000A7095 /* cloud.sleet.pdf */; };
-		0387CA9F245DE13A000A7095 /* cloud.sleet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA60245DE13A000A7095 /* cloud.sleet.pdf */; };
-		0387CAA0245DE13A000A7095 /* cloud.snow.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA61245DE13A000A7095 /* cloud.snow.pdf */; };
-		0387CAA1245DE13A000A7095 /* cloud.snow.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0387CA61245DE13A000A7095 /* cloud.snow.pdf */; };
 		03893CB3217749F0008E7125 /* ErrorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03893CB2217749F0008E7125 /* ErrorLog.swift */; };
-		03893CB4217753AC008E7125 /* ErrorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03893CB2217749F0008E7125 /* ErrorLog.swift */; };
 		038C584723A9304800224630 /* InfoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038C584623A9304800224630 /* InfoContainerView.swift */; };
-		038C584823A9308C00224630 /* InfoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038C584623A9304800224630 /* InfoContainerView.swift */; };
 		038C584A23A9394000224630 /* InfoCommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038C584923A9394000224630 /* InfoCommonView.swift */; };
-		038C584B23A9394000224630 /* InfoCommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038C584923A9394000224630 /* InfoCommonView.swift */; };
-		038D2EBD23AB91C300CD91F7 /* InfoLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A596D823AB8F000097EA66 /* InfoLocationView.swift */; };
 		038D2EDE23B0FB0D00CD91F7 /* PrefsVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D2EDD23B0FB0D00CD91F7 /* PrefsVideos.swift */; };
-		038D2EDF23B0FB0D00CD91F7 /* PrefsVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D2EDD23B0FB0D00CD91F7 /* PrefsVideos.swift */; };
 		038D2EE423B6565900CD91F7 /* InfoBatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D2EE323B6565900CD91F7 /* InfoBatteryView.swift */; };
-		038D2EE523B6565900CD91F7 /* InfoBatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D2EE323B6565900CD91F7 /* InfoBatteryView.swift */; };
 		038EBE9422D0AA3D00C7AD02 /* nl.json in Resources */ = {isa = PBXBuildFile; fileRef = 038EBE9322D0AA3D00C7AD02 /* nl.json */; };
-		038EBE9522D0AA3D00C7AD02 /* nl.json in Resources */ = {isa = PBXBuildFile; fileRef = 038EBE9322D0AA3D00C7AD02 /* nl.json */; };
 		0393857A2175D4B80040B850 /* AVPlayerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039385792175D4B80040B850 /* AVPlayerViewExtension.swift */; };
-		0393857B2175D4B80040B850 /* AVPlayerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039385792175D4B80040B850 /* AVPlayerViewExtension.swift */; };
 		03958349217F4416008E8F9C /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03958348217F4416008E8F9C /* Solar.swift */; };
-		0395834A217F442A008E8F9C /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03958348217F4416008E8F9C /* Solar.swift */; };
 		0395835321807D1F008E8F9C /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0395835121807D1F008E8F9C /* thumbnail@2x.png */; };
-		0395835421807D1F008E8F9C /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0395835121807D1F008E8F9C /* thumbnail@2x.png */; };
 		0395835521807D1F008E8F9C /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 0395835221807D1F008E8F9C /* thumbnail.png */; };
-		0395835621807D1F008E8F9C /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 0395835221807D1F008E8F9C /* thumbnail.png */; };
 		03A2CB9C216BA9AF0061E8E8 /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A2CB9B216BA9AF0061E8E8 /* VideoManager.swift */; };
-		03A2CB9D216BB1490061E8E8 /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A2CB9B216BA9AF0061E8E8 /* VideoManager.swift */; };
 		03A42A992449F5EA003B3012 /* white_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A42A822449F5EA003B3012 /* white_retina.png */; };
-		03A42A9A2449F5EA003B3012 /* white_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A42A822449F5EA003B3012 /* white_retina.png */; };
 		03A42A9C2449F602003B3012 /* purple_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A42A9B2449F601003B3012 /* purple_retina.png */; };
-		03A42A9D2449F602003B3012 /* purple_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A42A9B2449F601003B3012 /* purple_retina.png */; };
-		03A42AA02449F959003B3012 /* YahooLogoLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A42A9F2449F959003B3012 /* YahooLogoLayer.swift */; };
-		03A42AA12449F959003B3012 /* YahooLogoLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A42A9F2449F959003B3012 /* YahooLogoLayer.swift */; };
-		03A42AA3244A0E5F003B3012 /* ConditionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A42AA2244A0E5F003B3012 /* ConditionLayer.swift */; };
-		03A42AA4244A0E5F003B3012 /* ConditionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A42AA2244A0E5F003B3012 /* ConditionLayer.swift */; };
 		03A4A80B2451CE2C00A1F7A3 /* NSImage+trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A4A80A2451CE2C00A1F7A3 /* NSImage+trim.swift */; };
-		03A4A80C2451CE2C00A1F7A3 /* NSImage+trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A4A80A2451CE2C00A1F7A3 /* NSImage+trim.swift */; };
 		03A4A80E2451D04C00A1F7A3 /* PrefsAdvanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A4A80D2451D04C00A1F7A3 /* PrefsAdvanced.swift */; };
-		03A4A80F2451D04C00A1F7A3 /* PrefsAdvanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A4A80D2451D04C00A1F7A3 /* PrefsAdvanced.swift */; };
 		03A596D323AA750F0097EA66 /* InfoMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A596D223AA750F0097EA66 /* InfoMessageView.swift */; };
 		03A596D523AA752F0097EA66 /* InfoClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A596D423AA752F0097EA66 /* InfoClockView.swift */; };
-		03A596D623AA752F0097EA66 /* InfoClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A596D423AA752F0097EA66 /* InfoClockView.swift */; };
-		03A596D723AA75490097EA66 /* InfoMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A596D223AA750F0097EA66 /* InfoMessageView.swift */; };
 		03A596D923AB8F000097EA66 /* InfoLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A596D823AB8F000097EA66 /* InfoLocationView.swift */; };
 		03AD45FF22981B0C00261325 /* CustomVideoFolders+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD45FE22981B0C00261325 /* CustomVideoFolders+helpers.swift */; };
-		03AD460022981B1C00261325 /* CustomVideoFolders+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD45FE22981B0C00261325 /* CustomVideoFolders+helpers.swift */; };
-		03BF51BA23A24B40008AD373 /* AnimationTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0306336D23A15FA900046A59 /* AnimationTextLayer.swift */; };
 		03BF51BC23A2643C008AD373 /* LayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF51BB23A2643C008AD373 /* LayerManager.swift */; };
-		03BF51BD23A26522008AD373 /* LayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF51BB23A2643C008AD373 /* LayerManager.swift */; };
 		03BF51BF23A274CA008AD373 /* MessageLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF51BE23A274CA008AD373 /* MessageLayer.swift */; };
-		03BF51C023A275D9008AD373 /* MessageLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF51BE23A274CA008AD373 /* MessageLayer.swift */; };
 		03BF51C223A2978B008AD373 /* ClockLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF51C123A2978B008AD373 /* ClockLayer.swift */; };
-		03BF51C323A29E1D008AD373 /* ClockLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF51C123A2978B008AD373 /* ClockLayer.swift */; };
-		03CB892F239A758B005D1F64 /* AutoUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB892E239A758B005D1F64 /* AutoUpdates.swift */; };
 		03D1E78722842FB300D10CF7 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D1E78622842FB300D10CF7 /* DisplayView.swift */; };
-		03D1E7882284367200D10CF7 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D1E78622842FB300D10CF7 /* DisplayView.swift */; };
 		03D1E78A2284471A00D10CF7 /* DisplayDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D1E7892284471A00D10CF7 /* DisplayDetection.swift */; };
-		03D1E78B22844AFD00D10CF7 /* DisplayDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D1E7892284471A00D10CF7 /* DisplayDetection.swift */; };
 		03D1E79122848F7F00D10CF7 /* screen2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D1E78E22848F7F00D10CF7 /* screen2.jpg */; };
-		03D1E79222848F7F00D10CF7 /* screen2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D1E78E22848F7F00D10CF7 /* screen2.jpg */; };
-		03D1E79322848F7F00D10CF7 /* screen2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D1E78E22848F7F00D10CF7 /* screen2.jpg */; };
 		03D1E79422848F7F00D10CF7 /* screen1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D1E78F22848F7F00D10CF7 /* screen1.jpg */; };
-		03D1E79522848F7F00D10CF7 /* screen1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D1E78F22848F7F00D10CF7 /* screen1.jpg */; };
-		03D1E79622848F7F00D10CF7 /* screen1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D1E78F22848F7F00D10CF7 /* screen1.jpg */; };
 		03D1E79722848F7F00D10CF7 /* screen0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D1E79022848F7F00D10CF7 /* screen0.jpg */; };
-		03D1E79822848F7F00D10CF7 /* screen0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D1E79022848F7F00D10CF7 /* screen0.jpg */; };
-		03D1E79922848F7F00D10CF7 /* screen0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03D1E79022848F7F00D10CF7 /* screen0.jpg */; };
-		03D2A43424474304003ABD30 /* YahooWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D2A43324474304003ABD30 /* YahooWeatherAPI.swift */; };
-		03D2A4352447438D003ABD30 /* YahooWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D2A43324474304003ABD30 /* YahooWeatherAPI.swift */; };
-		03D2A43824474C37003ABD30 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D2A4172447401D003ABD30 /* OAuthSwift.framework */; };
-		03D2A43924474C38003ABD30 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D2A4172447401D003ABD30 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		03D2A43E24476117003ABD30 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D2A43D24476117003ABD30 /* WeatherAPI.swift */; };
-		03D2A43F24476117003ABD30 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D2A43D24476117003ABD30 /* WeatherAPI.swift */; };
 		03D37FD922145487005A146F /* es.json in Resources */ = {isa = PBXBuildFile; fileRef = 03D37FD722145487005A146F /* es.json */; };
-		03D37FDA22145487005A146F /* es.json in Resources */ = {isa = PBXBuildFile; fileRef = 03D37FD722145487005A146F /* es.json */; };
 		03D37FDB22145487005A146F /* fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 03D37FD822145487005A146F /* fr.json */; };
-		03D37FDC22145487005A146F /* fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 03D37FD822145487005A146F /* fr.json */; };
 		03D3DAC4221F286700BDA52F /* pl.json in Resources */ = {isa = PBXBuildFile; fileRef = 03D3DAC3221F286700BDA52F /* pl.json */; };
-		03D3DAC5221F286D00BDA52F /* pl.json in Resources */ = {isa = PBXBuildFile; fileRef = 03D3DAC3221F286700BDA52F /* pl.json */; };
-		03DAD470229EAC66000DA6D1 /* Installation.md in Resources */ = {isa = PBXBuildFile; fileRef = 03DAD46F229EAC66000DA6D1 /* Installation.md */; };
-		03DAD473229EC031000DA6D1 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 03DAD472229EC031000DA6D1 /* Readme.md */; };
-		03E289D5239A79C400C06EC5 /* AutoUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB892E239A758B005D1F64 /* AutoUpdates.swift */; };
 		03E4B20D22DC7F8800C22EBE /* zh_TW.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E4B20C22DC7F8700C22EBE /* zh_TW.json */; };
-		03E4B20E22DC7FE200C22EBE /* zh_TW.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E4B20C22DC7F8700C22EBE /* zh_TW.json */; };
-		03E4B20F22DC7FE600C22EBE /* zh_TW.json in Resources */ = {isa = PBXBuildFile; fileRef = 03E4B20C22DC7F8700C22EBE /* zh_TW.json */; };
 		03E8730C2165013C002B469B /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8730B2165013C002B469B /* DownloadManager.swift */; };
 		03E8730F216501ED002B469B /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8730E216501ED002B469B /* AsynchronousOperation.swift */; };
-		03E8731021662AEB002B469B /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8730B2165013C002B469B /* DownloadManager.swift */; };
-		03E8731121662AEB002B469B /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8730E216501ED002B469B /* AsynchronousOperation.swift */; };
 		03E8731321675FE0002B469B /* TimeManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8731221675FE0002B469B /* TimeManagement.swift */; };
-		03E87314216760B7002B469B /* TimeManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E8731221675FE0002B469B /* TimeManagement.swift */; };
 		03F8FF1D244B54E600813C96 /* it.json in Resources */ = {isa = PBXBuildFile; fileRef = 03F8FF06244B54E600813C96 /* it.json */; };
-		03F8FF1E244B54E600813C96 /* it.json in Resources */ = {isa = PBXBuildFile; fileRef = 03F8FF06244B54E600813C96 /* it.json */; };
-		03F8FF1F244B67D200813C96 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D2A4172447401D003ABD30 /* OAuthSwift.framework */; };
-		03F8FF20244B67D200813C96 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03D2A4172447401D003ABD30 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03FA49A12423DA1F00863AF6 /* TimerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA49A02423DA1F00863AF6 /* TimerLayer.swift */; };
-		03FA49A22423DA1F00863AF6 /* TimerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA49A02423DA1F00863AF6 /* TimerLayer.swift */; };
-		03FA49B22423DA7D00863AF6 /* InfoTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030DDA8F2423C3BE0072D5C9 /* InfoTimerView.swift */; };
 		03FA49B42428EE3300863AF6 /* InfoDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA49B32428EE3300863AF6 /* InfoDateView.swift */; };
-		03FA49B52428EE3300863AF6 /* InfoDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA49B32428EE3300863AF6 /* InfoDateView.swift */; };
 		03FA49B72428F84500863AF6 /* DateLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA49B62428F84500863AF6 /* DateLayer.swift */; };
-		03FA49B82428F84500863AF6 /* DateLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA49B62428F84500863AF6 /* DateLayer.swift */; };
 		AA7E2E5E1FC62E8B00E5F320 /* AerialPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E2E5D1FC62E8B00E5F320 /* AerialPlayerItem.swift */; };
 		F00864B423AAE7F0003210EF /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00864B323AAE7F0003210EF /* DarkMode.swift */; };
-		F00864B523AAE7F0003210EF /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00864B323AAE7F0003210EF /* DarkMode.swift */; };
 		F00864B723AAE8E9003210EF /* NightShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00864B623AAE8E9003210EF /* NightShift.swift */; };
-		F00864B823AAE8E9003210EF /* NightShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00864B623AAE8E9003210EF /* NightShift.swift */; };
 		F008DAFD23AADCFB00739DE1 /* Brightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008DAFC23AADCFB00739DE1 /* Brightness.swift */; };
-		F008DAFE23AADCFB00739DE1 /* Brightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008DAFC23AADCFB00739DE1 /* Brightness.swift */; };
-		FA143CE61BDA3EEF0041A82B /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA143CE51BDA3EEF0041A82B /* AVKit.framework */; };
 		FA36BD3F1BE57F8E00D5E03B /* VideoDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36BD3E1BE57F8E00D5E03B /* VideoDownload.swift */; };
-		FA36BD401BE57F8E00D5E03B /* VideoDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36BD3E1BE57F8E00D5E03B /* VideoDownload.swift */; };
 		FA6F81DC1D939455007975FE /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F81DB1D939455007975FE /* Preferences.swift */; };
-		FA6F81DD1D939455007975FE /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F81DB1D939455007975FE /* Preferences.swift */; };
-		FA7199711D94EC5A00FBC99B /* PreferencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7199701D94EC5A00FBC99B /* PreferencesTests.swift */; };
 		FAB22A7E1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB22A7D1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift */; };
-		FAB22A7F1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB22A7D1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift */; };
-		FAC36F481BE1756D007F2A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC36F321BE1756D007F2A20 /* Assets.xcassets */; };
-		FAC36F4A1BE1756D007F2A20 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC36F331BE1756D007F2A20 /* MainMenu.xib */; };
 		FAC36F4D1BE1756D007F2A20 /* icon-day.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAC36F371BE1756D007F2A20 /* icon-day.pdf */; };
-		FAC36F4E1BE1756D007F2A20 /* icon-day.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAC36F371BE1756D007F2A20 /* icon-day.pdf */; };
 		FAC36F4F1BE1756D007F2A20 /* icon-night.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAC36F381BE1756D007F2A20 /* icon-night.pdf */; };
-		FAC36F501BE1756D007F2A20 /* icon-night.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAC36F381BE1756D007F2A20 /* icon-night.pdf */; };
 		FAC36F531BE1756D007F2A20 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC36F3A1BE1756D007F2A20 /* PreferencesWindow.xib */; };
-		FAC36F541BE1756D007F2A20 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC36F3A1BE1756D007F2A20 /* PreferencesWindow.xib */; };
 		FAC36F571BE1756D007F2A20 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC36F3E1BE1756D007F2A20 /* PreferencesWindowController.swift */; };
-		FAC36F581BE1756D007F2A20 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC36F3E1BE1756D007F2A20 /* PreferencesWindowController.swift */; };
 		FAC36F591BE1756D007F2A20 /* AerialVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC36F401BE1756D007F2A20 /* AerialVideo.swift */; };
-		FAC36F5A1BE1756D007F2A20 /* AerialVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC36F401BE1756D007F2A20 /* AerialVideo.swift */; };
 		FAC36F5B1BE1756D007F2A20 /* AerialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC36F431BE1756D007F2A20 /* AerialView.swift */; };
-		FAC36F5C1BE1756D007F2A20 /* AerialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC36F431BE1756D007F2A20 /* AerialView.swift */; };
 		FAC36F5D1BE1756D007F2A20 /* CheckCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC36F441BE1756D007F2A20 /* CheckCellView.swift */; };
-		FAC36F5E1BE1756D007F2A20 /* CheckCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC36F441BE1756D007F2A20 /* CheckCellView.swift */; };
-		FAC36F601BE175CF007F2A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC36F301BE1756D007F2A20 /* AppDelegate.swift */; };
 		FAC36F671BE1778C007F2A20 /* ManifestLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC36F661BE1778C007F2A20 /* ManifestLoader.swift */; };
-		FAC36F681BE1778C007F2A20 /* ManifestLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC36F661BE1778C007F2A20 /* ManifestLoader.swift */; };
 		FAF450211BE2B45D00C1F98A /* VideoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF450201BE2B45D00C1F98A /* VideoLoader.swift */; };
-		FAF450221BE2B45D00C1F98A /* VideoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF450201BE2B45D00C1F98A /* VideoLoader.swift */; };
 		FAF450241BE2D2FD00C1F98A /* VideoCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF450231BE2D2FD00C1F98A /* VideoCache.swift */; };
-		FAF450251BE2D2FD00C1F98A /* VideoCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF450231BE2D2FD00C1F98A /* VideoCache.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		034116B423F9ACE300CD7674 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = Sparkle;
-		};
-		034116B623F9ACE300CD7674 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 61B5F90209C4CEE200B25A18;
-			remoteInfo = "Sparkle Test App";
-		};
-		034116B823F9ACE300CD7674 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 612279D90DB5470200AB99EA;
-			remoteInfo = "Sparkle Unit Tests";
-		};
-		034116BA23F9ACE300CD7674 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5D06E8D00FD68C7C005AE3F6;
-			remoteInfo = BinaryDelta;
-		};
-		034116BC23F9ACE300CD7674 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 55C14BB7136EEF1500649790;
-			remoteInfo = Autoupdate;
-		};
-		034116BE23F9ACE300CD7674 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 726B2B5D1C645FC900388755;
-			remoteInfo = "UI Tests";
-		};
-		034116C023F9ACE300CD7674 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 722954B41D04ADAF00ECF9CA;
-			remoteInfo = fileop;
-		};
-		034116C223F9ACE300CD7674 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5AE13FB31E0D9E07000D2C2C;
-			remoteInfo = generate_appcast;
-		};
-		034116C423F9ACE300CD7674 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5AB8F19F214DA72000A1187F;
-			remoteInfo = generate_keys;
-		};
-		034116C623F9ACE300CD7674 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5A5ADED7214EDE4900DF0099;
-			remoteInfo = sign_update;
-		};
-		034116C823F9ACE300CD7674 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EA4311EA229D651300A5503D;
-			remoteInfo = bsdiff;
-		};
-		034116CA23F9ACE300CD7674 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EA4311A0229D5FBC00A5503D;
-			remoteInfo = ed25519;
-		};
-		03D2A4142447401D003ABD30 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 03D2A40A2447401D003ABD30 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F435027A1A6791B200038A29;
-			remoteInfo = OAuthSwift;
-		};
-		03D2A4162447401D003ABD30 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 03D2A40A2447401D003ABD30 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C48B28021AFA598D00C7DEF6;
-			remoteInfo = OAuthSwiftMacOS;
-		};
-		03D2A4182447401D003ABD30 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 03D2A40A2447401D003ABD30 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C4B6EE1E1BF74CE300443596;
-			remoteInfo = OAuthSwiftTVOS;
-		};
-		03D2A41A2447401D003ABD30 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 03D2A40A2447401D003ABD30 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C40890C01C11B37000E3146A;
-			remoteInfo = OAuthSwiftWatchOS;
-		};
-		03D2A41C2447401D003ABD30 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 03D2A40A2447401D003ABD30 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F451E3C5195B8CD80051434C;
-			remoteInfo = OAuthSwiftDemo;
-		};
-		03D2A41E2447401D003ABD30 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 03D2A40A2447401D003ABD30 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C49FD5241AFB5DF500791E1A;
-			remoteInfo = OAuthSwiftMacOSDemo;
-		};
-		03D2A4202447401D003ABD30 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 03D2A40A2447401D003ABD30 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C4D50DF71BFB693F0053B624;
-			remoteInfo = OAuthSwiftTests;
-		};
-		FA7199731D94EC5A00FBC99B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FACAF19C1BD9FC6000E539DC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FA143CD51BDA3E880041A82B;
-			remoteInfo = "Aerial App";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		034116CE23F9AD0100CD7674 /* Embed Frameworks */ = {
@@ -476,20 +120,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				03F8FF20244B67D200813C96 /* OAuthSwift.framework in Embed Frameworks */,
-				034116CD23F9AD0100CD7674 /* Sparkle.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		034116D123F9AD0600CD7674 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				03D2A43924474C38003ABD30 /* OAuthSwift.framework in Embed Frameworks */,
-				034116D023F9AD0600CD7674 /* Sparkle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,20 +136,14 @@
 		030DDA8F2423C3BE0072D5C9 /* InfoTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTimerView.swift; sourceTree = "<group>"; };
 		0313F9E522942AA500B074BB /* CustomVideos.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomVideos.xib; sourceTree = "<group>"; };
 		0313F9E722942B4500B074BB /* CustomVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoController.swift; sourceTree = "<group>"; };
-		0313F9EB2294468600B074BB /* SeededGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeededGenerator.swift; sourceTree = "<group>"; };
 		0313F9EE22955F3B00B074BB /* CustomVideoFolders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoFolders.swift; sourceTree = "<group>"; };
 		03233B67217272640077D3F9 /* PoiStringProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiStringProvider.swift; sourceTree = "<group>"; };
 		032D1160239A7D82007E7756 /* Battery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battery.swift; sourceTree = "<group>"; };
 		032D1163239A7F0C007E7756 /* AerialView+Brightness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AerialView+Brightness.swift"; sourceTree = "<group>"; };
 		033192E0217B78240073B580 /* en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = en.json; sourceTree = "<group>"; };
-		033842E024489D7300A2C523 /* WeatherLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLayer.swift; sourceTree = "<group>"; };
 		033D62AA216CADCD00F3AF83 /* icon-day-dark.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "icon-day-dark.pdf"; sourceTree = "<group>"; };
 		033D62AE216CAE2C00F3AF83 /* icon-night-dark.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "icon-night-dark.pdf"; sourceTree = "<group>"; };
-		033D68802453080C0016F837 /* ConditionSymbolLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionSymbolLayer.swift; sourceTree = "<group>"; };
-		034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sparkle.xcodeproj; path = Extern/Sparkle/Sparkle.xcodeproj; sourceTree = "<group>"; };
 		034116D223F9BD3100CD7674 /* PrefsUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsUpdates.swift; sourceTree = "<group>"; };
-		034116D823FADE3600CD7674 /* UpdateReleaseWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdateReleaseWindow.xib; sourceTree = "<group>"; };
-		034116DB23FADEDA00CD7674 /* UpdateReleaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateReleaseController.swift; sourceTree = "<group>"; };
 		0345872C2449C52F00C97D1B /* AnimatableLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableLayer.swift; sourceTree = "<group>"; };
 		034587312449D8EB00C97D1B /* AnimationLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationLayer.swift; sourceTree = "<group>"; };
 		034F29B323A7A79B004B34D5 /* PWC+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PWC+Info.swift"; sourceTree = "<group>"; };
@@ -552,41 +176,7 @@
 		036A57D723F470940009DC02 /* InfoCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCountdownView.swift; sourceTree = "<group>"; };
 		036A57DA23F5820A0009DC02 /* CountdownLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownLayer.swift; sourceTree = "<group>"; };
 		0374C9FD247AC5BC002F29D3 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
-		0385FC58242B9AE1007E6513 /* APISecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISecrets.swift; sourceTree = "<group>"; };
-		0385FC5C242B9F6E007E6513 /* InfoWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWeatherView.swift; sourceTree = "<group>"; };
 		0387CA3F245DC7A4000A7095 /* bolt.fill.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = bolt.fill.pdf; sourceTree = "<group>"; };
-		0387CA42245DE138000A7095 /* wrench.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wrench.pdf; sourceTree = "<group>"; };
-		0387CA43245DE138000A7095 /* sun.max.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sun.max.pdf; sourceTree = "<group>"; };
-		0387CA44245DE138000A7095 /* wind.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wind.pdf; sourceTree = "<group>"; };
-		0387CA45245DE138000A7095 /* moon.stars.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = moon.stars.pdf; sourceTree = "<group>"; };
-		0387CA46245DE138000A7095 /* cloud.bolt.rain.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.bolt.rain.pdf; sourceTree = "<group>"; };
-		0387CA47245DE138000A7095 /* cloud.rain.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.rain.pdf; sourceTree = "<group>"; };
-		0387CA48245DE138000A7095 /* cloud.fog.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.fog.pdf; sourceTree = "<group>"; };
-		0387CA49245DE138000A7095 /* thermometer.sun.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = thermometer.sun.pdf; sourceTree = "<group>"; };
-		0387CA4A245DE138000A7095 /* snow.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = snow.pdf; sourceTree = "<group>"; };
-		0387CA4B245DE139000A7095 /* cloud.sun.bolt.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.sun.bolt.pdf; sourceTree = "<group>"; };
-		0387CA4C245DE139000A7095 /* tropicalstorm.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tropicalstorm.pdf; sourceTree = "<group>"; };
-		0387CA4D245DE139000A7095 /* hurricane.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = hurricane.pdf; sourceTree = "<group>"; };
-		0387CA4E245DE139000A7095 /* cloud.heavyrain.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.heavyrain.pdf; sourceTree = "<group>"; };
-		0387CA4F245DE139000A7095 /* wind.snow.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wind.snow.pdf; sourceTree = "<group>"; };
-		0387CA50245DE139000A7095 /* sun.min.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sun.min.pdf; sourceTree = "<group>"; };
-		0387CA51245DE139000A7095 /* cloud.moon.rain.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.moon.rain.pdf; sourceTree = "<group>"; };
-		0387CA52245DE139000A7095 /* cloud.drizzle.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.drizzle.pdf; sourceTree = "<group>"; };
-		0387CA53245DE139000A7095 /* cloud.moon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.moon.pdf; sourceTree = "<group>"; };
-		0387CA54245DE139000A7095 /* cloud.sun.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.sun.pdf; sourceTree = "<group>"; };
-		0387CA55245DE139000A7095 /* moon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = moon.pdf; sourceTree = "<group>"; };
-		0387CA56245DE139000A7095 /* thermometer.snowflake.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = thermometer.snowflake.pdf; sourceTree = "<group>"; };
-		0387CA57245DE139000A7095 /* smoke.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = smoke.pdf; sourceTree = "<group>"; };
-		0387CA58245DE139000A7095 /* cloud.moon.bolt.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.moon.bolt.pdf; sourceTree = "<group>"; };
-		0387CA59245DE13A000A7095 /* tornado.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tornado.pdf; sourceTree = "<group>"; };
-		0387CA5A245DE13A000A7095 /* sun.dust.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sun.dust.pdf; sourceTree = "<group>"; };
-		0387CA5B245DE13A000A7095 /* cloud.sun.rain.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.sun.rain.pdf; sourceTree = "<group>"; };
-		0387CA5C245DE13A000A7095 /* cloud.bolt.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.bolt.pdf; sourceTree = "<group>"; };
-		0387CA5D245DE13A000A7095 /* sun.haze.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sun.haze.pdf; sourceTree = "<group>"; };
-		0387CA5E245DE13A000A7095 /* cloud.hail.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.hail.pdf; sourceTree = "<group>"; };
-		0387CA5F245DE13A000A7095 /* cloud.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.pdf; sourceTree = "<group>"; };
-		0387CA60245DE13A000A7095 /* cloud.sleet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.sleet.pdf; sourceTree = "<group>"; };
-		0387CA61245DE13A000A7095 /* cloud.snow.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cloud.snow.pdf; sourceTree = "<group>"; };
 		03893CB2217749F0008E7125 /* ErrorLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLog.swift; sourceTree = "<group>"; };
 		038C584623A9304800224630 /* InfoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoContainerView.swift; sourceTree = "<group>"; };
 		038C584923A9394000224630 /* InfoCommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCommonView.swift; sourceTree = "<group>"; };
@@ -600,8 +190,6 @@
 		03A2CB9B216BA9AF0061E8E8 /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
 		03A42A822449F5EA003B3012 /* white_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_retina.png; sourceTree = "<group>"; };
 		03A42A9B2449F601003B3012 /* purple_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purple_retina.png; sourceTree = "<group>"; };
-		03A42A9F2449F959003B3012 /* YahooLogoLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooLogoLayer.swift; sourceTree = "<group>"; };
-		03A42AA2244A0E5F003B3012 /* ConditionLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionLayer.swift; sourceTree = "<group>"; };
 		03A4A80A2451CE2C00A1F7A3 /* NSImage+trim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+trim.swift"; sourceTree = "<group>"; };
 		03A4A80D2451D04C00A1F7A3 /* PrefsAdvanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsAdvanced.swift; sourceTree = "<group>"; };
 		03A596D223AA750F0097EA66 /* InfoMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMessageView.swift; sourceTree = "<group>"; };
@@ -611,15 +199,11 @@
 		03BF51BB23A2643C008AD373 /* LayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerManager.swift; sourceTree = "<group>"; };
 		03BF51BE23A274CA008AD373 /* MessageLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLayer.swift; sourceTree = "<group>"; };
 		03BF51C123A2978B008AD373 /* ClockLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockLayer.swift; sourceTree = "<group>"; };
-		03CB892E239A758B005D1F64 /* AutoUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoUpdates.swift; sourceTree = "<group>"; };
 		03D1E78622842FB300D10CF7 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DisplayView.swift; path = Aerial/Source/Views/PrefPanel/DisplayView.swift; sourceTree = SOURCE_ROOT; };
 		03D1E7892284471A00D10CF7 /* DisplayDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDetection.swift; sourceTree = "<group>"; };
 		03D1E78E22848F7F00D10CF7 /* screen2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screen2.jpg; sourceTree = "<group>"; };
 		03D1E78F22848F7F00D10CF7 /* screen1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screen1.jpg; sourceTree = "<group>"; };
 		03D1E79022848F7F00D10CF7 /* screen0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screen0.jpg; sourceTree = "<group>"; };
-		03D2A40A2447401D003ABD30 /* OAuthSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthSwift.xcodeproj; path = Extern/OAuthSwift/OAuthSwift.xcodeproj; sourceTree = "<group>"; };
-		03D2A43324474304003ABD30 /* YahooWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooWeatherAPI.swift; sourceTree = "<group>"; };
-		03D2A43D24476117003ABD30 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		03D37FD722145487005A146F /* es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = es.json; sourceTree = "<group>"; };
 		03D37FD822145487005A146F /* fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fr.json; sourceTree = "<group>"; };
 		03D3DAC3221F286700BDA52F /* pl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pl.json; sourceTree = "<group>"; };
@@ -643,11 +227,9 @@
 		F00864B323AAE7F0003210EF /* DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
 		F00864B623AAE8E9003210EF /* NightShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightShift.swift; sourceTree = "<group>"; };
 		F008DAFC23AADCFB00739DE1 /* Brightness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brightness.swift; sourceTree = "<group>"; };
-		FA143CD61BDA3E880041A82B /* AerialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AerialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA143CE51BDA3EEF0041A82B /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		FA36BD3E1BE57F8E00D5E03B /* VideoDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = VideoDownload.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FA6F81DB1D939455007975FE /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
-		FA71996E1D94EC5A00FBC99B /* Aerial Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aerial Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7199701D94EC5A00FBC99B /* PreferencesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesTests.swift; sourceTree = "<group>"; };
 		FA7199721D94EC5A00FBC99B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB22A7D1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AssetLoaderDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -670,32 +252,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FA143CD31BDA3E880041A82B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03510C772185EF8F008F74F2 /* CoreLocation.framework in Frameworks */,
-				03510C6B21834EB2008F74F2 /* IOKit.framework in Frameworks */,
-				FA143CE61BDA3EEF0041A82B /* AVKit.framework in Frameworks */,
-				034116CF23F9AD0600CD7674 /* Sparkle.framework in Frameworks */,
-				03D2A43824474C37003ABD30 /* OAuthSwift.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA71996B1D94EC5A00FBC99B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FACAF1A11BD9FC6000E539DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				03510C732185EF76008F74F2 /* CoreLocation.framework in Frameworks */,
-				034116CC23F9AD0100CD7674 /* Sparkle.framework in Frameworks */,
-				03F8FF1F244B67D200813C96 /* OAuthSwift.framework in Frameworks */,
 				03510C6C21834EFF008F74F2 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -706,7 +267,6 @@
 		0306336623A1010800046A59 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
-				03A42A9E2449F946003B3012 /* Weather */,
 				03BF51BB23A2643C008AD373 /* LayerManager.swift */,
 				0306336A23A142FA00046A59 /* LayerOffsets.swift */,
 				0345872C2449C52F00C97D1B /* AnimatableLayer.swift */,
@@ -743,64 +303,6 @@
 			path = Community;
 			sourceTree = "<group>";
 		};
-		034116A323F9ACE300CD7674 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				034116B523F9ACE300CD7674 /* Sparkle.framework */,
-				034116B723F9ACE300CD7674 /* Sparkle Test App.app */,
-				034116B923F9ACE300CD7674 /* Sparkle Unit Tests.xctest */,
-				034116BB23F9ACE300CD7674 /* BinaryDelta */,
-				034116BD23F9ACE300CD7674 /* Autoupdate.app */,
-				034116BF23F9ACE300CD7674 /* UI Tests.xctest */,
-				034116C123F9ACE300CD7674 /* fileop */,
-				034116C323F9ACE300CD7674 /* generate_appcast */,
-				034116C523F9ACE300CD7674 /* generate_keys */,
-				034116C723F9ACE300CD7674 /* sign_update */,
-				034116C923F9ACE300CD7674 /* libbsdiff.a */,
-				034116CB23F9ACE300CD7674 /* libed25519.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		0345A23124532DC600DD47CD /* Weather */ = {
-			isa = PBXGroup;
-			children = (
-				0387CA5C245DE13A000A7095 /* cloud.bolt.pdf */,
-				0387CA46245DE138000A7095 /* cloud.bolt.rain.pdf */,
-				0387CA52245DE139000A7095 /* cloud.drizzle.pdf */,
-				0387CA48245DE138000A7095 /* cloud.fog.pdf */,
-				0387CA5E245DE13A000A7095 /* cloud.hail.pdf */,
-				0387CA4E245DE139000A7095 /* cloud.heavyrain.pdf */,
-				0387CA58245DE139000A7095 /* cloud.moon.bolt.pdf */,
-				0387CA53245DE139000A7095 /* cloud.moon.pdf */,
-				0387CA51245DE139000A7095 /* cloud.moon.rain.pdf */,
-				0387CA5F245DE13A000A7095 /* cloud.pdf */,
-				0387CA47245DE138000A7095 /* cloud.rain.pdf */,
-				0387CA60245DE13A000A7095 /* cloud.sleet.pdf */,
-				0387CA61245DE13A000A7095 /* cloud.snow.pdf */,
-				0387CA4B245DE139000A7095 /* cloud.sun.bolt.pdf */,
-				0387CA54245DE139000A7095 /* cloud.sun.pdf */,
-				0387CA5B245DE13A000A7095 /* cloud.sun.rain.pdf */,
-				0387CA4D245DE139000A7095 /* hurricane.pdf */,
-				0387CA55245DE139000A7095 /* moon.pdf */,
-				0387CA45245DE138000A7095 /* moon.stars.pdf */,
-				0387CA57245DE139000A7095 /* smoke.pdf */,
-				0387CA4A245DE138000A7095 /* snow.pdf */,
-				0387CA5A245DE13A000A7095 /* sun.dust.pdf */,
-				0387CA5D245DE13A000A7095 /* sun.haze.pdf */,
-				0387CA43245DE138000A7095 /* sun.max.pdf */,
-				0387CA50245DE139000A7095 /* sun.min.pdf */,
-				0387CA56245DE139000A7095 /* thermometer.snowflake.pdf */,
-				0387CA49245DE138000A7095 /* thermometer.sun.pdf */,
-				0387CA59245DE13A000A7095 /* tornado.pdf */,
-				0387CA4C245DE139000A7095 /* tropicalstorm.pdf */,
-				0387CA44245DE138000A7095 /* wind.pdf */,
-				0387CA4F245DE139000A7095 /* wind.snow.pdf */,
-				0387CA42245DE138000A7095 /* wrench.pdf */,
-			);
-			path = Weather;
-			sourceTree = "<group>";
-		};
 		034F29B523A7A8E1004B34D5 /* PrefPanel */ = {
 			isa = PBXGroup;
 			children = (
@@ -818,7 +320,6 @@
 				0354D0EB23F6CB7B00D86F9E /* InfoSettingsView.swift */,
 				030DDA8F2423C3BE0072D5C9 /* InfoTimerView.swift */,
 				03FA49B32428EE3300863AF6 /* InfoDateView.swift */,
-				0385FC5C242B9F6E007E6513 /* InfoWeatherView.swift */,
 			);
 			path = PrefPanel;
 			sourceTree = "<group>";
@@ -853,16 +354,6 @@
 			path = "PWC Tabs";
 			sourceTree = "<group>";
 		};
-		0385FC57242B9A9B007E6513 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				0385FC58242B9AE1007E6513 /* APISecrets.swift */,
-				03D2A43324474304003ABD30 /* YahooWeatherAPI.swift */,
-				03D2A43D24476117003ABD30 /* WeatherAPI.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		03958347217F43FF008E8F9C /* Time */ = {
 			isa = PBXGroup;
 			children = (
@@ -874,17 +365,6 @@
 			path = Time;
 			sourceTree = "<group>";
 		};
-		03A42A9E2449F946003B3012 /* Weather */ = {
-			isa = PBXGroup;
-			children = (
-				033842E024489D7300A2C523 /* WeatherLayer.swift */,
-				03A42A9F2449F959003B3012 /* YahooLogoLayer.swift */,
-				03A42AA2244A0E5F003B3012 /* ConditionLayer.swift */,
-				033D68802453080C0016F837 /* ConditionSymbolLayer.swift */,
-			);
-			path = Weather;
-			sourceTree = "<group>";
-		};
 		03D1E78D22848F6D00D10CF7 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
@@ -893,20 +373,6 @@
 				03D1E78E22848F7F00D10CF7 /* screen2.jpg */,
 			);
 			path = Screenshots;
-			sourceTree = "<group>";
-		};
-		03D2A40B2447401D003ABD30 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				03D2A4152447401D003ABD30 /* OAuthSwift.framework */,
-				03D2A4172447401D003ABD30 /* OAuthSwift.framework */,
-				03D2A4192447401D003ABD30 /* OAuthSwift.framework */,
-				03D2A41B2447401D003ABD30 /* OAuthSwift.framework */,
-				03D2A41D2447401D003ABD30 /* OAuthSwiftDemo.app */,
-				03D2A41F2447401D003ABD30 /* OAuthSwiftMacOSDemo.app */,
-				03D2A4212447401D003ABD30 /* OAuthSwiftTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		03DAD46E229EAC66000DA6D1 /* Documentation */ = {
@@ -949,8 +415,6 @@
 		FA2D7AA01BDD849E009EA54C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				03D2A40A2447401D003ABD30 /* OAuthSwift.xcodeproj */,
-				034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */,
 				03510C722185EF76008F74F2 /* CoreLocation.framework */,
 				03510C6A21834EB2008F74F2 /* IOKit.framework */,
 				FA143CE51BDA3EEF0041A82B /* AVKit.framework */,
@@ -992,7 +456,6 @@
 			children = (
 				030A0F0C245C7924009E1D97 /* battery.0.pdf */,
 				0387CA3F245DC7A4000A7095 /* bolt.fill.pdf */,
-				0345A23124532DC600DD47CD /* Weather */,
 				03D1E78D22848F6D00D10CF7 /* Screenshots */,
 				033192DF217B77E90073B580 /* Community */,
 				033D62AA216CADCD00F3AF83 /* icon-day-dark.pdf */,
@@ -1006,7 +469,6 @@
 				0395835121807D1F008E8F9C /* thumbnail@2x.png */,
 				FAC36F3A1BE1756D007F2A20 /* PreferencesWindow.xib */,
 				0313F9E522942AA500B074BB /* CustomVideos.xib */,
-				034116D823FADE3600CD7674 /* UpdateReleaseWindow.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1028,7 +490,6 @@
 				03608A1122A54921008F08A2 /* PWC Tabs */,
 				FAC36F3E1BE1756D007F2A20 /* PreferencesWindowController.swift */,
 				0313F9E722942B4500B074BB /* CustomVideoController.swift */,
-				034116DB23FADEDA00CD7674 /* UpdateReleaseController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1036,7 +497,6 @@
 		FAC36F3F1BE1756D007F2A20 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0385FC57242B9A9B007E6513 /* API */,
 				F008DAFB23AADC8E00739DE1 /* Hardware */,
 				034F29BA23A7D516004B34D5 /* Prefs */,
 				03958347217F43FF008E8F9C /* Time */,
@@ -1047,10 +507,8 @@
 				0374C9FD247AC5BC002F29D3 /* Locations.swift */,
 				FAC36F661BE1778C007F2A20 /* ManifestLoader.swift */,
 				03893CB2217749F0008E7125 /* ErrorLog.swift */,
-				0313F9EB2294468600B074BB /* SeededGenerator.swift */,
 				0313F9EE22955F3B00B074BB /* CustomVideoFolders.swift */,
 				03AD45FE22981B0C00261325 /* CustomVideoFolders+helpers.swift */,
-				03CB892E239A758B005D1F64 /* AutoUpdates.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1108,8 +566,6 @@
 			isa = PBXGroup;
 			children = (
 				FACAF1A51BD9FC6000E539DC /* Aerial.saver */,
-				FA143CD61BDA3E880041A82B /* AerialApp.app */,
-				FA71996E1D94EC5A00FBC99B /* Aerial Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1128,54 +584,15 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		FA143CD51BDA3E880041A82B /* AerialApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA143CE01BDA3E880041A82B /* Build configuration list for PBXNativeTarget "AerialApp" */;
-			buildPhases = (
-				FA74B8481D94DCE0004FE056 /* Run Script - Swiftlint */,
-				FA143CD21BDA3E880041A82B /* Sources */,
-				FA143CD31BDA3E880041A82B /* Frameworks */,
-				FA143CD41BDA3E880041A82B /* Resources */,
-				034116D123F9AD0600CD7674 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AerialApp;
-			productName = "Aerial Test";
-			productReference = FA143CD61BDA3E880041A82B /* AerialApp.app */;
-			productType = "com.apple.product-type.application";
-		};
-		FA71996D1D94EC5A00FBC99B /* Aerial Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA7199751D94EC5A00FBC99B /* Build configuration list for PBXNativeTarget "Aerial Tests" */;
-			buildPhases = (
-				FA71996A1D94EC5A00FBC99B /* Sources */,
-				FA71996B1D94EC5A00FBC99B /* Frameworks */,
-				FA71996C1D94EC5A00FBC99B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FA7199741D94EC5A00FBC99B /* PBXTargetDependency */,
-			);
-			name = "Aerial Tests";
-			productName = "Aerial Tests";
-			productReference = FA71996E1D94EC5A00FBC99B /* Aerial Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		FACAF1A41BD9FC6000E539DC /* Aerial */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FACAF1AF1BD9FC6000E539DC /* Build configuration list for PBXNativeTarget "Aerial" */;
 			buildPhases = (
-				7E9B50FB2187D302002895ED /* Run Script - Swiftlint */,
 				FACAF1A01BD9FC6000E539DC /* Sources */,
 				FACAF1A11BD9FC6000E539DC /* Frameworks */,
 				FACAF1A21BD9FC6000E539DC /* Headers */,
 				FACAF1A31BD9FC6000E539DC /* Resources */,
 				034116CE23F9AD0100CD7674 /* Embed Frameworks */,
-				038EF1B623E86DCA00E9D379 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1196,23 +613,11 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Guillaume Louel";
 				TargetAttributes = {
-					FA143CD51BDA3E880041A82B = {
-						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 3L54M5L5KK;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
-					};
-					FA71996D1D94EC5A00FBC99B = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
-						TestTargetID = FA143CD51BDA3E880041A82B;
-					};
 					FACAF1A41BD9FC6000E539DC = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 3L54M5L5KK;
+						DevelopmentTeam = GP676945VL;
 						LastSwiftMigration = 1020;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1227,474 +632,57 @@
 			mainGroup = FACAF19B1BD9FC6000E539DC;
 			productRefGroup = FACAF1A61BD9FC6000E539DC /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 03D2A40B2447401D003ABD30 /* Products */;
-					ProjectRef = 03D2A40A2447401D003ABD30 /* OAuthSwift.xcodeproj */;
-				},
-				{
-					ProductGroup = 034116A323F9ACE300CD7674 /* Products */;
-					ProjectRef = 034116A223F9ACE300CD7674 /* Sparkle.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				FACAF1A41BD9FC6000E539DC /* Aerial */,
-				FA143CD51BDA3E880041A82B /* AerialApp */,
-				FA71996D1D94EC5A00FBC99B /* Aerial Tests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		034116B523F9ACE300CD7674 /* Sparkle.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Sparkle.framework;
-			remoteRef = 034116B423F9ACE300CD7674 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		034116B723F9ACE300CD7674 /* Sparkle Test App.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Sparkle Test App.app";
-			remoteRef = 034116B623F9ACE300CD7674 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		034116B923F9ACE300CD7674 /* Sparkle Unit Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Sparkle Unit Tests.xctest";
-			remoteRef = 034116B823F9ACE300CD7674 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		034116BB23F9ACE300CD7674 /* BinaryDelta */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = BinaryDelta;
-			remoteRef = 034116BA23F9ACE300CD7674 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		034116BD23F9ACE300CD7674 /* Autoupdate.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Autoupdate.app;
-			remoteRef = 034116BC23F9ACE300CD7674 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		034116BF23F9ACE300CD7674 /* UI Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "UI Tests.xctest";
-			remoteRef = 034116BE23F9ACE300CD7674 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		034116C123F9ACE300CD7674 /* fileop */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = fileop;
-			remoteRef = 034116C023F9ACE300CD7674 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		034116C323F9ACE300CD7674 /* generate_appcast */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = generate_appcast;
-			remoteRef = 034116C223F9ACE300CD7674 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		034116C523F9ACE300CD7674 /* generate_keys */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = generate_keys;
-			remoteRef = 034116C423F9ACE300CD7674 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		034116C723F9ACE300CD7674 /* sign_update */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = sign_update;
-			remoteRef = 034116C623F9ACE300CD7674 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		034116C923F9ACE300CD7674 /* libbsdiff.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libbsdiff.a;
-			remoteRef = 034116C823F9ACE300CD7674 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		034116CB23F9ACE300CD7674 /* libed25519.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libed25519.a;
-			remoteRef = 034116CA23F9ACE300CD7674 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		03D2A4152447401D003ABD30 /* OAuthSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OAuthSwift.framework;
-			remoteRef = 03D2A4142447401D003ABD30 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		03D2A4172447401D003ABD30 /* OAuthSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OAuthSwift.framework;
-			remoteRef = 03D2A4162447401D003ABD30 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		03D2A4192447401D003ABD30 /* OAuthSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OAuthSwift.framework;
-			remoteRef = 03D2A4182447401D003ABD30 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		03D2A41B2447401D003ABD30 /* OAuthSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OAuthSwift.framework;
-			remoteRef = 03D2A41A2447401D003ABD30 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		03D2A41D2447401D003ABD30 /* OAuthSwiftDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = OAuthSwiftDemo.app;
-			remoteRef = 03D2A41C2447401D003ABD30 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		03D2A41F2447401D003ABD30 /* OAuthSwiftMacOSDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = OAuthSwiftMacOSDemo.app;
-			remoteRef = 03D2A41E2447401D003ABD30 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		03D2A4212447401D003ABD30 /* OAuthSwiftTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = OAuthSwiftTests.xctest;
-			remoteRef = 03D2A4202447401D003ABD30 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
-		FA143CD41BDA3E880041A82B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0387CA9F245DE13A000A7095 /* cloud.sleet.pdf in Resources */,
-				0387CA85245DE13A000A7095 /* cloud.moon.pdf in Resources */,
-				0387CAA1245DE13A000A7095 /* cloud.snow.pdf in Resources */,
-				036A34B622730A0700A49135 /* zh_CN.json in Resources */,
-				033192E2217B78240073B580 /* en.json in Resources */,
-				0387CA75245DE13A000A7095 /* cloud.sun.bolt.pdf in Resources */,
-				03DAD470229EAC66000DA6D1 /* Installation.md in Resources */,
-				0387CA95245DE13A000A7095 /* cloud.sun.rain.pdf in Resources */,
-				FAC36F541BE1756D007F2A20 /* PreferencesWindow.xib in Resources */,
-				03A42A9D2449F602003B3012 /* purple_retina.png in Resources */,
-				0387CA99245DE13A000A7095 /* sun.haze.pdf in Resources */,
-				0387CA73245DE13A000A7095 /* snow.pdf in Resources */,
-				03D1E79522848F7F00D10CF7 /* screen1.jpg in Resources */,
-				FAC36F4E1BE1756D007F2A20 /* icon-day.pdf in Resources */,
-				0387CA91245DE13A000A7095 /* tornado.pdf in Resources */,
-				03D37FDA22145487005A146F /* es.json in Resources */,
-				0387CA97245DE13A000A7095 /* cloud.bolt.pdf in Resources */,
-				0369985E2196129C00E359D3 /* missingvideos.json in Resources */,
-				0387CA83245DE13A000A7095 /* cloud.drizzle.pdf in Resources */,
-				030A0F24245C7924009E1D97 /* battery.0.pdf in Resources */,
-				038EBE9522D0AA3D00C7AD02 /* nl.json in Resources */,
-				033D62B0216CAE2C00F3AF83 /* icon-night-dark.pdf in Resources */,
-				0387CA7D245DE13A000A7095 /* wind.snow.pdf in Resources */,
-				0387CA89245DE13A000A7095 /* moon.pdf in Resources */,
-				0395835621807D1F008E8F9C /* thumbnail.png in Resources */,
-				03F8FF1E244B54E600813C96 /* it.json in Resources */,
-				0387CA81245DE13A000A7095 /* cloud.moon.rain.pdf in Resources */,
-				035A92AD226754760095AB85 /* ar.json in Resources */,
-				0313F9E92294337F00B074BB /* CustomVideos.xib in Resources */,
-				03D3DAC5221F286D00BDA52F /* pl.json in Resources */,
-				0387CA6B245DE13A000A7095 /* cloud.bolt.rain.pdf in Resources */,
-				FAC36F481BE1756D007F2A20 /* Assets.xcassets in Resources */,
-				0387CA8B245DE13A000A7095 /* thermometer.snowflake.pdf in Resources */,
-				03DAD473229EC031000DA6D1 /* Readme.md in Resources */,
-				0387CA7F245DE13A000A7095 /* sun.min.pdf in Resources */,
-				0387CA79245DE13A000A7095 /* hurricane.pdf in Resources */,
-				0387CA63245DE13A000A7095 /* wrench.pdf in Resources */,
-				0387CA6D245DE13A000A7095 /* cloud.rain.pdf in Resources */,
-				0387CA7B245DE13A000A7095 /* cloud.heavyrain.pdf in Resources */,
-				033D62AC216CADCD00F3AF83 /* icon-day-dark.pdf in Resources */,
-				0387CA41245DC7A5000A7095 /* bolt.fill.pdf in Resources */,
-				03D1E79222848F7F00D10CF7 /* screen2.jpg in Resources */,
-				0387CA77245DE13A000A7095 /* tropicalstorm.pdf in Resources */,
-				FAC36F4A1BE1756D007F2A20 /* MainMenu.xib in Resources */,
-				FAC36F501BE1756D007F2A20 /* icon-night.pdf in Resources */,
-				0387CA71245DE13A000A7095 /* thermometer.sun.pdf in Resources */,
-				0387CA6F245DE13A000A7095 /* cloud.fog.pdf in Resources */,
-				0387CA87245DE13A000A7095 /* cloud.sun.pdf in Resources */,
-				0387CA65245DE13A000A7095 /* sun.max.pdf in Resources */,
-				0387CA69245DE13A000A7095 /* moon.stars.pdf in Resources */,
-				0387CA9D245DE13A000A7095 /* cloud.pdf in Resources */,
-				0387CA93245DE13A000A7095 /* sun.dust.pdf in Resources */,
-				03E4B20E22DC7FE200C22EBE /* zh_TW.json in Resources */,
-				035A92A9225F8C480095AB85 /* he.json in Resources */,
-				0387CA8D245DE13A000A7095 /* smoke.pdf in Resources */,
-				0387CA9B245DE13A000A7095 /* cloud.hail.pdf in Resources */,
-				035A92A7225F8C480095AB85 /* de.json in Resources */,
-				0395835421807D1F008E8F9C /* thumbnail@2x.png in Resources */,
-				03A42A9A2449F5EA003B3012 /* white_retina.png in Resources */,
-				034116DA23FADE3600CD7674 /* UpdateReleaseWindow.xib in Resources */,
-				03D1E79822848F7F00D10CF7 /* screen0.jpg in Resources */,
-				03D37FDC22145487005A146F /* fr.json in Resources */,
-				0387CA8F245DE13A000A7095 /* cloud.moon.bolt.pdf in Resources */,
-				0387CA67245DE13A000A7095 /* wind.pdf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA71996C1D94EC5A00FBC99B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03D1E79322848F7F00D10CF7 /* screen2.jpg in Resources */,
-				036A34B722730A0700A49135 /* zh_CN.json in Resources */,
-				03E4B20F22DC7FE600C22EBE /* zh_TW.json in Resources */,
-				033D62B1216CAE2C00F3AF83 /* icon-night-dark.pdf in Resources */,
-				03D1E79622848F7F00D10CF7 /* screen1.jpg in Resources */,
-				03D1E79922848F7F00D10CF7 /* screen0.jpg in Resources */,
-				033D62AD216CADCD00F3AF83 /* icon-day-dark.pdf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FACAF1A31BD9FC6000E539DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FAC36F531BE1756D007F2A20 /* PreferencesWindow.xib in Resources */,
 				035A92A6225F8C480095AB85 /* de.json in Resources */,
-				0387CA62245DE13A000A7095 /* wrench.pdf in Resources */,
-				0387CA76245DE13A000A7095 /* tropicalstorm.pdf in Resources */,
 				03D37FDB22145487005A146F /* fr.json in Resources */,
 				03A42A992449F5EA003B3012 /* white_retina.png in Resources */,
 				035A92AC226754760095AB85 /* ar.json in Resources */,
 				036A34B5227309FB00A49135 /* zh_CN.json in Resources */,
 				03D1E79122848F7F00D10CF7 /* screen2.jpg in Resources */,
-				0387CA6E245DE13A000A7095 /* cloud.fog.pdf in Resources */,
-				0387CA7C245DE13A000A7095 /* wind.snow.pdf in Resources */,
 				FAC36F4D1BE1756D007F2A20 /* icon-day.pdf in Resources */,
-				0387CA9C245DE13A000A7095 /* cloud.pdf in Resources */,
-				0387CA9A245DE13A000A7095 /* cloud.hail.pdf in Resources */,
-				0387CAA0245DE13A000A7095 /* cloud.snow.pdf in Resources */,
 				035A92A8225F8C480095AB85 /* he.json in Resources */,
-				0387CA68245DE13A000A7095 /* moon.stars.pdf in Resources */,
-				0387CA8C245DE13A000A7095 /* smoke.pdf in Resources */,
-				0387CA82245DE13A000A7095 /* cloud.drizzle.pdf in Resources */,
 				0387CA40245DC7A5000A7095 /* bolt.fill.pdf in Resources */,
-				0387CA7A245DE13A000A7095 /* cloud.heavyrain.pdf in Resources */,
-				0387CA6A245DE13A000A7095 /* cloud.bolt.rain.pdf in Resources */,
 				03D3DAC4221F286700BDA52F /* pl.json in Resources */,
 				030A0F23245C7924009E1D97 /* battery.0.pdf in Resources */,
 				033D62AB216CADCD00F3AF83 /* icon-day-dark.pdf in Resources */,
 				03D1E79722848F7F00D10CF7 /* screen0.jpg in Resources */,
-				0387CA84245DE13A000A7095 /* cloud.moon.pdf in Resources */,
 				0395835321807D1F008E8F9C /* thumbnail@2x.png in Resources */,
 				0395835521807D1F008E8F9C /* thumbnail.png in Resources */,
 				03F8FF1D244B54E600813C96 /* it.json in Resources */,
-				0387CA8E245DE13A000A7095 /* cloud.moon.bolt.pdf in Resources */,
 				03D37FD922145487005A146F /* es.json in Resources */,
 				03D1E79422848F7F00D10CF7 /* screen1.jpg in Resources */,
-				0387CA70245DE13A000A7095 /* thermometer.sun.pdf in Resources */,
-				0387CA96245DE13A000A7095 /* cloud.bolt.pdf in Resources */,
-				0387CA66245DE13A000A7095 /* wind.pdf in Resources */,
 				038EBE9422D0AA3D00C7AD02 /* nl.json in Resources */,
-				0387CA94245DE13A000A7095 /* cloud.sun.rain.pdf in Resources */,
-				0387CA9E245DE13A000A7095 /* cloud.sleet.pdf in Resources */,
-				0387CA80245DE13A000A7095 /* cloud.moon.rain.pdf in Resources */,
-				0387CA90245DE13A000A7095 /* tornado.pdf in Resources */,
 				033D62AF216CAE2C00F3AF83 /* icon-night-dark.pdf in Resources */,
-				0387CA6C245DE13A000A7095 /* cloud.rain.pdf in Resources */,
 				0369985D2196103300E359D3 /* missingvideos.json in Resources */,
-				0387CA98245DE13A000A7095 /* sun.haze.pdf in Resources */,
-				0387CA86245DE13A000A7095 /* cloud.sun.pdf in Resources */,
-				034116D923FADE3600CD7674 /* UpdateReleaseWindow.xib in Resources */,
-				0387CA74245DE13A000A7095 /* cloud.sun.bolt.pdf in Resources */,
-				0387CA92245DE13A000A7095 /* sun.dust.pdf in Resources */,
-				0387CA8A245DE13A000A7095 /* thermometer.snowflake.pdf in Resources */,
-				0387CA7E245DE13A000A7095 /* sun.min.pdf in Resources */,
 				03E4B20D22DC7F8800C22EBE /* zh_TW.json in Resources */,
 				FAC36F4F1BE1756D007F2A20 /* icon-night.pdf in Resources */,
-				0387CA88245DE13A000A7095 /* moon.pdf in Resources */,
 				0313F9E622942AA500B074BB /* CustomVideos.xib in Resources */,
 				033192E1217B78240073B580 /* en.json in Resources */,
-				0387CA72245DE13A000A7095 /* snow.pdf in Resources */,
 				03A42A9C2449F602003B3012 /* purple_retina.png in Resources */,
-				0387CA78245DE13A000A7095 /* hurricane.pdf in Resources */,
-				0387CA64245DE13A000A7095 /* sun.max.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		038EF1B623E86DCA00E9D379 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nLOCATION=\"${BUILT_PRODUCTS_DIR}\"/\"${FRAMEWORKS_FOLDER_PATH}\"\n\n# By default, use the configured code signing identity for the project/target\nIDENTITY=\"${CODE_SIGN_IDENTITY}\"\nif [ \"$IDENTITY\" == \"\" ]\nthen\n  # If a code signing identity is not specified, use ad hoc signing\n  IDENTITY=\"-\"\nfi\ncodesign --verbose --force --deep -o runtime --sign \"$IDENTITY\" \"$LOCATION/Sparkle.framework/Versions/A/Resources/AutoUpdate.app\"\ncodesign --verbose --force -o runtime --sign \"$IDENTITY\" \"$LOCATION/Sparkle.framework/Versions/A\"\n";
-		};
-		7E9B50FB2187D302002895ED /* Run Script - Swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script - Swiftlint";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#if which swiftlint >/dev/null; then\n#    if [ -z \"$CI\" ]; then\n#        make --directory=${SRCROOT} xcode-lint\n#    fi\n#else\n#    echo \"warning: SwiftLint not installed, install using `brew install swiftlint`\"\n#fi\nif which swiftlint >/dev/null; then\n    swiftlint autocorrect\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		FA74B8481D94DCE0004FE056 /* Run Script - Swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script - Swiftlint";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#if which swiftlint >/dev/null; then\n#    if [ -z \"$CI\" ]; then\n#        make --directory=${SRCROOT} xcode-lint\n#    fi\n#else\n#    echo \"warning: SwiftLint not installed, install using `brew install swiftlint`\"\n#fi\nif which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		FA143CD21BDA3E880041A82B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F00864B523AAE7F0003210EF /* DarkMode.swift in Sources */,
-				03FA49B82428F84500863AF6 /* DateLayer.swift in Sources */,
-				0361B9AC23D73D4500B6252D /* PrefsTime.swift in Sources */,
-				032D1162239A7E03007E7756 /* Battery.swift in Sources */,
-				03893CB4217753AC008E7125 /* ErrorLog.swift in Sources */,
-				03233B692172762C0077D3F9 /* PoiStringProvider.swift in Sources */,
-				03BF51C323A29E1D008AD373 /* ClockLayer.swift in Sources */,
-				0306336C23A143D900046A59 /* LayerOffsets.swift in Sources */,
-				03A2CB9D216BB1490061E8E8 /* VideoManager.swift in Sources */,
-				03608A2A22A56094008F08A2 /* PWC+LogPanel.swift in Sources */,
-				03E289D5239A79C400C06EC5 /* AutoUpdates.swift in Sources */,
-				0354D0ED23F6CB7B00D86F9E /* InfoSettingsView.swift in Sources */,
-				03608A2722A55C03008F08A2 /* PWC+Advanced.swift in Sources */,
-				03E87314216760B7002B469B /* TimeManagement.swift in Sources */,
-				038C584B23A9394000224630 /* InfoCommonView.swift in Sources */,
-				03A596D723AA75490097EA66 /* InfoMessageView.swift in Sources */,
-				03D1E78B22844AFD00D10CF7 /* DisplayDetection.swift in Sources */,
-				03E8731021662AEB002B469B /* DownloadManager.swift in Sources */,
-				03E8731121662AEB002B469B /* AsynchronousOperation.swift in Sources */,
-				03510C7121834FC7008F74F2 /* IOBridge.m in Sources */,
-				F00864B823AAE8E9003210EF /* NightShift.swift in Sources */,
-				03608A2422A55BF1008F08A2 /* PWC+Updates.swift in Sources */,
-				03D2A43F24476117003ABD30 /* WeatherAPI.swift in Sources */,
-				03D1E7882284367200D10CF7 /* DisplayView.swift in Sources */,
-				038D2EDF23B0FB0D00CD91F7 /* PrefsVideos.swift in Sources */,
-				03608A2122A55BC2008F08A2 /* PWC+Cache.swift in Sources */,
-				038D2EE523B6565900CD91F7 /* InfoBatteryView.swift in Sources */,
-				030D9B7C21551A8D00961E95 /* AerialPlayerItem.swift in Sources */,
-				030A0F2A245C7C7D009E1D97 /* BatteryIconLayer.swift in Sources */,
-				034587332449E22000C97D1B /* AnimationLayer.swift in Sources */,
-				034116DD23FADEDA00CD7674 /* UpdateReleaseController.swift in Sources */,
-				03FA49A22423DA1F00863AF6 /* TimerLayer.swift in Sources */,
-				03608A2D22A56465008F08A2 /* HardwareDetection.swift in Sources */,
-				036A57D923F4747D0009DC02 /* InfoCountdownView.swift in Sources */,
-				FAC36F5E1BE1756D007F2A20 /* CheckCellView.swift in Sources */,
-				FAC36F5C1BE1756D007F2A20 /* AerialView.swift in Sources */,
-				FAC36F681BE1778C007F2A20 /* ManifestLoader.swift in Sources */,
-				03608A1722A55B44008F08A2 /* PWC+Displays.swift in Sources */,
-				03FA49B52428EE3300863AF6 /* InfoDateView.swift in Sources */,
-				0306336923A1026800046A59 /* LocationLayer.swift in Sources */,
-				FAC36F581BE1756D007F2A20 /* PreferencesWindowController.swift in Sources */,
-				034F29C023A7E58C004B34D5 /* PrefsInfo.swift in Sources */,
-				0385FC6D242BA097007E6513 /* InfoWeatherView.swift in Sources */,
-				034F29B923A7B0FC004B34D5 /* PWC+Info.swift in Sources */,
-				03BF51C023A275D9008AD373 /* MessageLayer.swift in Sources */,
-				035D5250239AA31A00DC29DC /* AerialView+Player.swift in Sources */,
-				0354D0EA23F6C3EE00D86F9E /* InfoSettingsTableSource.swift in Sources */,
-				0385FC5A242B9AE1007E6513 /* APISecrets.swift in Sources */,
-				0345872E2449C59900C97D1B /* AnimatableLayer.swift in Sources */,
-				0395834A217F442A008E8F9C /* Solar.swift in Sources */,
-				FAB22A7F1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift in Sources */,
-				FAC36F601BE175CF007F2A20 /* AppDelegate.swift in Sources */,
-				03AD460022981B1C00261325 /* CustomVideoFolders+helpers.swift in Sources */,
-				0361B9A923D732A300B6252D /* PrefsDisplays.swift in Sources */,
-				032D1165239A7F17007E7756 /* AerialView+Brightness.swift in Sources */,
-				FA36BD401BE57F8E00D5E03B /* VideoDownload.swift in Sources */,
-				0313F9F022955F3B00B074BB /* CustomVideoFolders.swift in Sources */,
-				03BF51BD23A26522008AD373 /* LayerManager.swift in Sources */,
-				03608A1B22A55B9A008F08A2 /* PWC+Time.swift in Sources */,
-				FA6F81DD1D939455007975FE /* Preferences.swift in Sources */,
-				034116D423F9BD3100CD7674 /* PrefsUpdates.swift in Sources */,
-				FAF450221BE2B45D00C1F98A /* VideoLoader.swift in Sources */,
-				0374C9FF247AC5BC002F29D3 /* Locations.swift in Sources */,
-				036A57DC23F5828E0009DC02 /* CountdownLayer.swift in Sources */,
-				0313F9EA2294338300B074BB /* CustomVideoController.swift in Sources */,
-				FAC36F5A1BE1756D007F2A20 /* AerialVideo.swift in Sources */,
-				038D2EBD23AB91C300CD91F7 /* InfoLocationView.swift in Sources */,
-				034F29B823A7A9B3004B34D5 /* InfoTableSource.swift in Sources */,
-				0313F9ED2294468600B074BB /* SeededGenerator.swift in Sources */,
-				03A4A80F2451D04C00A1F7A3 /* PrefsAdvanced.swift in Sources */,
-				03A4A80C2451CE2C00A1F7A3 /* NSImage+trim.swift in Sources */,
-				03FA49B22423DA7D00863AF6 /* InfoTimerView.swift in Sources */,
-				0393857B2175D4B80040B850 /* AVPlayerViewExtension.swift in Sources */,
-				03608A1E22A55BA7008F08A2 /* PWC+Brightness.swift in Sources */,
-				03608A1222A5499C008F08A2 /* PWC+Videos.swift in Sources */,
-				03A42AA12449F959003B3012 /* YahooLogoLayer.swift in Sources */,
-				033842F824489EC600A2C523 /* WeatherLayer.swift in Sources */,
-				038C584823A9308C00224630 /* InfoContainerView.swift in Sources */,
-				03BF51BA23A24B40008AD373 /* AnimationTextLayer.swift in Sources */,
-				F008DAFE23AADCFB00739DE1 /* Brightness.swift in Sources */,
-				03A42AA4244A0E5F003B3012 /* ConditionLayer.swift in Sources */,
-				036A57D623F30F490009DC02 /* UpdatesLayer.swift in Sources */,
-				03A596D623AA752F0097EA66 /* InfoClockView.swift in Sources */,
-				03D2A4352447438D003ABD30 /* YahooWeatherAPI.swift in Sources */,
-				0345A24B24532E4600DD47CD /* ConditionSymbolLayer.swift in Sources */,
-				FAF450251BE2D2FD00C1F98A /* VideoCache.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA71996A1D94EC5A00FBC99B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA7199711D94EC5A00FBC99B /* PreferencesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FACAF1A01BD9FC6000E539DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03CB892F239A758B005D1F64 /* AutoUpdates.swift in Sources */,
 				03D1E78A2284471A00D10CF7 /* DisplayDetection.swift in Sources */,
 				0306336B23A142FA00046A59 /* LayerOffsets.swift in Sources */,
-				0385FC59242B9AE1007E6513 /* APISecrets.swift in Sources */,
 				F00864B723AAE8E9003210EF /* NightShift.swift in Sources */,
 				03608A1A22A55B9A008F08A2 /* PWC+Time.swift in Sources */,
 				FAC36F5D1BE1756D007F2A20 /* CheckCellView.swift in Sources */,
@@ -1717,12 +705,8 @@
 				FAF450241BE2D2FD00C1F98A /* VideoCache.swift in Sources */,
 				030A0F29245C7C7D009E1D97 /* BatteryIconLayer.swift in Sources */,
 				0361B9A823D732A300B6252D /* PrefsDisplays.swift in Sources */,
-				03D2A43424474304003ABD30 /* YahooWeatherAPI.swift in Sources */,
-				03D2A43E24476117003ABD30 /* WeatherAPI.swift in Sources */,
 				0306336E23A15FA900046A59 /* AnimationTextLayer.swift in Sources */,
-				0385FC5D242B9F6E007E6513 /* InfoWeatherView.swift in Sources */,
 				FAC36F571BE1756D007F2A20 /* PreferencesWindowController.swift in Sources */,
-				0313F9EC2294468600B074BB /* SeededGenerator.swift in Sources */,
 				03FA49B42428EE3300863AF6 /* InfoDateView.swift in Sources */,
 				FAC36F671BE1778C007F2A20 /* ManifestLoader.swift in Sources */,
 				03FA49A12423DA1F00863AF6 /* TimerLayer.swift in Sources */,
@@ -1738,12 +722,9 @@
 				03FA49B72428F84500863AF6 /* DateLayer.swift in Sources */,
 				AA7E2E5E1FC62E8B00E5F320 /* AerialPlayerItem.swift in Sources */,
 				03608A2C22A56465008F08A2 /* HardwareDetection.swift in Sources */,
-				034116DC23FADEDA00CD7674 /* UpdateReleaseController.swift in Sources */,
-				03A42AA02449F959003B3012 /* YahooLogoLayer.swift in Sources */,
 				03608A1022A54887008F08A2 /* PWC+Videos.swift in Sources */,
 				03A596D323AA750F0097EA66 /* InfoMessageView.swift in Sources */,
 				03608A2022A55BC2008F08A2 /* PWC+Cache.swift in Sources */,
-				03A42AA3244A0E5F003B3012 /* ConditionLayer.swift in Sources */,
 				03A2CB9C216BA9AF0061E8E8 /* VideoManager.swift in Sources */,
 				03608A1D22A55BA7008F08A2 /* PWC+Brightness.swift in Sources */,
 				038C584723A9304800224630 /* InfoContainerView.swift in Sources */,
@@ -1765,13 +746,11 @@
 				0361B9AB23D73D4500B6252D /* PrefsTime.swift in Sources */,
 				03233B68217272640077D3F9 /* PoiStringProvider.swift in Sources */,
 				03A4A80E2451D04C00A1F7A3 /* PrefsAdvanced.swift in Sources */,
-				033842E124489D7300A2C523 /* WeatherLayer.swift in Sources */,
 				FA36BD3F1BE57F8E00D5E03B /* VideoDownload.swift in Sources */,
 				0354D0E923F6C31800D86F9E /* InfoSettingsTableSource.swift in Sources */,
 				03E8730C2165013C002B469B /* DownloadManager.swift in Sources */,
 				03608A2622A55C03008F08A2 /* PWC+Advanced.swift in Sources */,
 				036A57D823F470940009DC02 /* InfoCountdownView.swift in Sources */,
-				033D68812453080C0016F837 /* ConditionSymbolLayer.swift in Sources */,
 				034587322449D8EB00C97D1B /* AnimationLayer.swift in Sources */,
 				0345872D2449C52F00C97D1B /* AnimatableLayer.swift in Sources */,
 				03A596D523AA752F0097EA66 /* InfoClockView.swift in Sources */,
@@ -1780,14 +759,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FA7199741D94EC5A00FBC99B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FA143CD51BDA3E880041A82B /* AerialApp */;
-			targetProxy = FA7199731D94EC5A00FBC99B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FAC36F331BE1756D007F2A20 /* MainMenu.xib */ = {
@@ -1801,92 +772,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FA143CE11BDA3E880041A82B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.8.2;
-				DEVELOPMENT_TEAM = 3L54M5L5KK;
-				ENABLE_TESTABILITY = YES;
-				INFOPLIST_FILE = Aerial/App/Resources/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.8.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.johncoates.Aerial-Test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Aerial/Source/Models/Time/Aerial-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		FA143CE21BDA3E880041A82B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.8.2;
-				DEVELOPMENT_TEAM = 3L54M5L5KK;
-				ENABLE_TESTABILITY = YES;
-				INFOPLIST_FILE = Aerial/App/Resources/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.8.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.johncoates.Aerial-Test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OBJC_BRIDGING_HEADER = "Aerial/Source/Models/Time/Aerial-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		FA7199761D94EC5A00FBC99B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.johncoates.Aerial-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AerialApp.app/Contents/MacOS/AerialApp";
-			};
-			name = Debug;
-		};
-		FA7199771D94EC5A00FBC99B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.johncoates.Aerial-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AerialApp.app/Contents/MacOS/AerialApp";
-			};
-			name = Release;
-		};
 		FACAF1AD1BD9FC6000E539DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1998,19 +883,19 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Guillaume Louel (3L54M5L5KK)";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.9.0;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3L54M5L5KK;
+				DEVELOPMENT_TEAM = GP676945VL;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.johncoates.Aerial;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.czo.Aerial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Aerial/Source/Models/Time/Aerial-Bridging-Header.h";
@@ -2026,12 +911,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Guillaume Louel (3L54M5L5KK)";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.9.0;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3L54M5L5KK;
+				DEVELOPMENT_TEAM = GP676945VL;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
@@ -2039,7 +924,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.9.0;
 				OTHER_CODE_SIGN_FLAGS = "--timestamp";
-				PRODUCT_BUNDLE_IDENTIFIER = com.johncoates.Aerial;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.czo.Aerial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Aerial/Source/Models/Time/Aerial-Bridging-Header.h";
@@ -2051,24 +936,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA143CE01BDA3E880041A82B /* Build configuration list for PBXNativeTarget "AerialApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA143CE11BDA3E880041A82B /* Debug */,
-				FA143CE21BDA3E880041A82B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA7199751D94EC5A00FBC99B /* Build configuration list for PBXNativeTarget "Aerial Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA7199761D94EC5A00FBC99B /* Debug */,
-				FA7199771D94EC5A00FBC99B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		FACAF19F1BD9FC6000E539DC /* Build configuration list for PBXProject "Aerial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

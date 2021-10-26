@@ -180,19 +180,6 @@ final class AerialView: ScreenSaverView, CAAnimationDelegate {
 
         let preferences = Preferences.sharedInstance
 
-        let au = AutoUpdates.sharedInstance
-        // Run Sparkle updater if enabled
-        if !isPreview {
-            if preferences.updateWhileSaverMode {
-                if PrefsUpdates.sparkleUpdateMode == .notify {
-                    // Run the probing check
-                    au.doProbingCheck()
-                } else {
-                    // Run the forced update
-                    au.doForcedUpdate()
-                }
-            }
-        }
 
         // Check early if we need to enable power saver mode,
         // black screen with minimal brightness

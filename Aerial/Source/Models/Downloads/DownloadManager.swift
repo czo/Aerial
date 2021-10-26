@@ -240,6 +240,42 @@ extension DownloadOperation: URLSessionTaskDelegate {
             } catch let error as NSError {
                 debugLog("Error renaming TVIdleScreenStrings13.bundle: \(error)")
             }
+        } else if task.originalRequest!.url!.absoluteString.contains("resources-15.tar") {
+            debugLog("untaring resources-15.tar")
+
+            // Extract json
+            let process: Process = Process()
+            let cacheDirectory = VideoCache.appSupportDirectory!
+
+            var cacheResourcesString = cacheDirectory
+            cacheResourcesString.append(contentsOf: "/resources-15.tar")
+
+            process.currentDirectoryPath = cacheDirectory
+            process.launchPath = "/usr/bin/tar"
+            process.arguments = ["-xvf", cacheResourcesString]
+
+            process.launch()
+
+            process.waitUntilExit()
+
+            let fileManager = FileManager.default
+            let src = VideoCache.appSupportDirectory!.appending("/entries.json")
+            let dest = VideoCache.appSupportDirectory!.appending("/tvos15.json")
+
+            do {
+                try fileManager.moveItem(atPath: src, toPath: dest)
+            } catch let error as NSError {
+                debugLog("Error renaming tvos15.json: \(error)")
+            }
+
+            let bsrc = VideoCache.appSupportDirectory!.appending("/TVIdleScreenStrings.bundle")
+            let bdest = VideoCache.appSupportDirectory!.appending("/TVIdleScreenStrings15.bundle")
+
+            do {
+                try fileManager.moveItem(atPath: bsrc, toPath: bdest)
+            } catch let error as NSError {
+                debugLog("Error renaming TVIdleScreenStrings15.bundle: \(error)")
+            }
         }
 
         debugLog("Finished downloading \(task.originalRequest!.url!.absoluteString)")
