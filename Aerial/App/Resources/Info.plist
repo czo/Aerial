@@ -41,9 +41,5 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>SUFeedURL</key>
-	<string>https://raw.githubusercontent.com/JohnCoates/Aerial/master/appcast.xml</string>
-	<key>SUPublicEDKey</key>
-	<string>fbiQGEFq55xl4bjwj2/SpIO4JMsKmEyhHEWlMMueyDY=</string>
 </dict>
 </plist>

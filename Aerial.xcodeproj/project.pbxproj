@@ -132,7 +132,6 @@
 		0306336D23A15FA900046A59 /* AnimationTextLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTextLayer.swift; sourceTree = "<group>"; };
 		030A0F0C245C7924009E1D97 /* battery.0.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = battery.0.pdf; sourceTree = "<group>"; };
 		030A0F28245C7C7D009E1D97 /* BatteryIconLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryIconLayer.swift; sourceTree = "<group>"; };
-		030B5E32229FDD26008F2910 /* AutoUpdates.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AutoUpdates.md; sourceTree = "<group>"; };
 		030DDA8F2423C3BE0072D5C9 /* InfoTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTimerView.swift; sourceTree = "<group>"; };
 		0313F9E522942AA500B074BB /* CustomVideos.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomVideos.xib; sourceTree = "<group>"; };
 		0313F9E722942B4500B074BB /* CustomVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoController.swift; sourceTree = "<group>"; };
@@ -207,14 +206,7 @@
 		03D37FD722145487005A146F /* es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = es.json; sourceTree = "<group>"; };
 		03D37FD822145487005A146F /* fr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fr.json; sourceTree = "<group>"; };
 		03D3DAC3221F286700BDA52F /* pl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pl.json; sourceTree = "<group>"; };
-		03D6C78922A0384F00DE830B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		03DAD46F229EAC66000DA6D1 /* Installation.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Installation.md; sourceTree = "<group>"; };
-		03DAD471229EB1E9000DA6D1 /* ChangeLog.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ChangeLog.md; sourceTree = "<group>"; };
 		03DAD472229EC031000DA6D1 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
-		03DAD474229EC3CD000DA6D1 /* OfflineMode.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = OfflineMode.md; sourceTree = "<group>"; };
-		03DAD475229EC544000DA6D1 /* HardwareDecoding.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = HardwareDecoding.md; sourceTree = "<group>"; };
-		03DAD476229EC64D000DA6D1 /* Troubleshooting.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Troubleshooting.md; sourceTree = "<group>"; };
-		03DAD477229ECAAA000DA6D1 /* CustomVideos.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CustomVideos.md; sourceTree = "<group>"; };
 		03E4B20C22DC7F8700C22EBE /* zh_TW.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zh_TW.json; sourceTree = "<group>"; };
 		03E8730B2165013C002B469B /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		03E8730E216501ED002B469B /* AsynchronousOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
@@ -373,21 +365,6 @@
 				03D1E78E22848F7F00D10CF7 /* screen2.jpg */,
 			);
 			path = Screenshots;
-			sourceTree = "<group>";
-		};
-		03DAD46E229EAC66000DA6D1 /* Documentation */ = {
-			isa = PBXGroup;
-			children = (
-				03DAD46F229EAC66000DA6D1 /* Installation.md */,
-				03DAD471229EB1E9000DA6D1 /* ChangeLog.md */,
-				03DAD474229EC3CD000DA6D1 /* OfflineMode.md */,
-				03DAD475229EC544000DA6D1 /* HardwareDecoding.md */,
-				03DAD476229EC64D000DA6D1 /* Troubleshooting.md */,
-				03DAD477229ECAAA000DA6D1 /* CustomVideos.md */,
-				030B5E32229FDD26008F2910 /* AutoUpdates.md */,
-				03D6C78922A0384F00DE830B /* README.md */,
-			);
-			path = Documentation;
 			sourceTree = "<group>";
 		};
 		03E8730D216501B3002B469B /* Downloads */ = {
@@ -552,7 +529,6 @@
 			isa = PBXGroup;
 			children = (
 				03DAD472229EC031000DA6D1 /* Readme.md */,
-				03DAD46E229EAC66000DA6D1 /* Documentation */,
 				FAC36F2F1BE1756D007F2A20 /* App */,
 				FAC36F361BE1756D007F2A20 /* Resources */,
 				FAC36F3C1BE1756D007F2A20 /* Source */,
