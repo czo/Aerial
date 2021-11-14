@@ -25,7 +25,7 @@ final class PoiStringProvider {
     var loadedDescriptions = false
     var loadedDescriptionsWasLocalized = false
 
-    var stringBundle: Bundle?
+    var stringBundle:Array<Bundle> = []
     var stringDict: [String: String]?
 
     var communityStrings = [CommunityStrings]()
@@ -34,7 +34,7 @@ final class PoiStringProvider {
     init() {
         debugLog("Poi Strings Provider initialized")
         loadBundle()
-        loadCommunity()
+//        loadCommunity()
     }
 
     // MARK: - Bundle management
@@ -48,41 +48,67 @@ final class PoiStringProvider {
     private func loadBundle() {
         // Idle string bundle
         let preferences = Preferences.sharedInstance
-        var bundlePath = VideoCache.appSupportDirectory!
+        let appSupportDirectory = VideoCache.appSupportDirectory!
+
+        var bundlePath:Array<String> = []
+
         if preferences.ciOverrideLanguage == "" {
             debugLog("Preferred languages : \(Locale.preferredLanguages)")
 
             let bestMatchedLanguage = Bundle.preferredLocalizations(from: getBundleLanguages(), forPreferences: Locale.preferredLanguages).first
             if let match = bestMatchedLanguage {
                 debugLog("Best matched language : \(match)")
-                bundlePath.append(contentsOf: "/TVIdleScreenStrings13.bundle/" + match + ".lproj/")
+                var bundlePath13 = appSupportDirectory
+                bundlePath13.append(contentsOf: "/TVIdleScreenStrings13.bundle/" + match + ".lproj/")
+                var bundlePath15 = appSupportDirectory
+                bundlePath15.append(contentsOf: "/TVIdleScreenStrings15.bundle/" + match + ".lproj/")
+                bundlePath.append( bundlePath13 )
+                bundlePath.append( bundlePath15 )
             } else {
                 debugLog("No match, reverting to english")
                 // We load the bundle and let system grab the closest available preferred language
                 // This no longer works in Catalina and defaults back to english
                 // as legacyScreenSaver.appex, our new "mainbundle" is english only
-                bundlePath.append(contentsOf: "/TVIdleScreenStrings13.bundle")
+                var bundlePath13 = appSupportDirectory
+                bundlePath13.append(contentsOf: "/TVIdleScreenStrings13.bundle")
+                var bundlePath15 = appSupportDirectory
+                bundlePath15.append(contentsOf: "/TVIdleScreenStrings15.bundle")
+                bundlePath.append( bundlePath13 )
+                bundlePath.append( bundlePath15 )
             }
         } else {
             debugLog("Language overriden to \(String(describing: preferences.ciOverrideLanguage))")
             // Or we load the overriden one
-            bundlePath.append(contentsOf: "/TVIdleScreenStrings13.bundle/" + preferences.ciOverrideLanguage! + ".lproj/")
+            var bundlePath13 = appSupportDirectory
+            bundlePath13.append(contentsOf: "/TVIdleScreenStrings13.bundle/" + preferences.ciOverrideLanguage! + ".lproj/")
+            var bundlePath15 = appSupportDirectory
+            bundlePath15.append(contentsOf: "/TVIdleScreenStrings15.bundle/" + preferences.ciOverrideLanguage! + ".lproj/")
+            bundlePath.append( bundlePath13 )
+            bundlePath.append( bundlePath15 )
         }
 
-        if let sb = Bundle.init(path: bundlePath) {
-            let dictPath = VideoCache.appSupportDirectory!.appending("/TVIdleScreenStrings13.bundle/en.lproj/Localizable.nocache.strings")
+        var sourceStringDict : [String: String] = [:]
 
-            // We could probably only work with that...
-            if let sd = NSDictionary(contentsOfFile: dictPath) as? [String: String] {
-                self.stringDict = sd
+        for singleBundlePath in bundlePath {
+            if let sb = Bundle.init(path: singleBundlePath) {
+                let dictPath = singleBundlePath.appending("/Localizable.nocache.strings")
+
+                if let sd = NSDictionary(contentsOfFile: dictPath) as? [String: String] {
+                    sourceStringDict = sourceStringDict.merging(sd) { (current, new ) in new }
+                }
+
+                self.stringBundle.append(sb)
+                self.loadedDescriptions = true
+            } else {
+                errorLog("\(singleBundlePath) is missing, please remove entries.json in Cache folder to fix the issue" )
             }
+        }
 
-            self.stringBundle = sb
-            self.loadedDescriptions = true
-        } else {
-            errorLog("TVIdleScreenStrings13.bundle is missing, please remove entries.json in Cache folder to fix the issue")
+        if ( !sourceStringDict.isEmpty ) {
+            self.stringDict = sourceStringDict
         }
     }
+
 
     // Make sure we have the correct bundle loaded
     private func ensureLoadedBundle() -> Bool {
@@ -110,7 +136,13 @@ final class PoiStringProvider {
         if !video.communityPoi.isEmpty {
             return key  // We directly store the string in the key
         } else {
-            return stringBundle!.localizedString(forKey: key, value: "", table: "Localizable.nocache")
+            for sb in self.stringBundle {
+                let retVal = sb.localizedString(forKey: key, value: "", table: "Localizable.nocache")
+                if ( retVal != key ) {
+                    return retVal
+                }
+            }
+            return key
         }
     }
 

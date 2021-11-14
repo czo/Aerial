@@ -634,19 +634,18 @@ class ManifestLoader {
     // Load the JSON Data cached on disk
     func loadCachedManifests() {
         if let cacheDirectory = VideoCache.appSupportDirectory {
-            var cacheFileUrl = URL(fileURLWithPath: cacheDirectory as String)
-
-
             // tvOS15
+            var cacheFileUrl = URL(fileURLWithPath: cacheDirectory as String)
             cacheFileUrl.appendPathComponent("tvos15.json")
             do {
                 let ndata = try Data(contentsOf: cacheFileUrl)
-                manifestTvOS13 = ndata
+                manifestTvOS15 = ndata
             } catch {
                 errorLog("Can't load tvos15.json from cached directory")
             }
 
             // tvOS13
+            cacheFileUrl = URL(fileURLWithPath: cacheDirectory as String)
             cacheFileUrl.appendPathComponent("tvos13.json")
             do {
                 let ndata = try Data(contentsOf: cacheFileUrl)
