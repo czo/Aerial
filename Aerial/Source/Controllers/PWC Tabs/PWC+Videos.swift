@@ -43,6 +43,7 @@ final class City {
 
 extension PreferencesWindowController {
     // swiftlint:disable:next cyclomatic_complexity
+
     func setupVideosTab() {
         // Help popover, GVA detection requires 10.13
         if #available(OSX 10.13, *) {
@@ -98,10 +99,6 @@ extension PreferencesWindowController {
 
         onBatteryPopup.selectItem(at: PrefsVideos.onBatteryMode.rawValue)
 
-        if !PrefsVideos.allowSkips {
-            rightArrowKeyPlaysNextCheckbox.state = .off
-        }
-
         // HEVC is available only in macOS 10.13+
         if #available(OSX 10.13, *) {
             popupVideoFormat.selectItem(at: PrefsVideos.videoFormat.rawValue)
@@ -120,12 +117,6 @@ extension PreferencesWindowController {
             menu1080pHDR.isHidden = true
             menu4KHDR.isHidden = true
         }
-    }
-
-    @IBAction func rightArrowKeyPlaysNextClick(_ sender: NSButton) {
-        let onState = sender.state == .on
-        PrefsVideos.allowSkips = onState
-        debugLog("UI allowSkips \(onState)")
     }
 
     @IBAction func popupVideoFormatChange(_ sender: NSPopUpButton) {
@@ -245,27 +236,9 @@ extension PreferencesWindowController {
                         action: #selector(PreferencesWindowController.outlineViewUncheckAll(button:)),
                         keyEquivalent: "",
                         at: 5)
-        menu.insertItem(NSMenuItem.separator(), at: 6)
-        menu.insertItem(withTitle: "Download Checked",
-                        action: #selector(PreferencesWindowController.outlineViewDownloadChecked(button:)),
-                        keyEquivalent: "",
-                        at: 7)
-        menu.insertItem(withTitle: "Download All",
-                        action: #selector(PreferencesWindowController.outlineViewDownloadAll(button:)),
-                        keyEquivalent: "",
-                        at: 8)
-        menu.insertItem(NSMenuItem.separator(), at: 9)
-        menu.insertItem(withTitle: "Custom Videos...",
-                        action: #selector(PreferencesWindowController.outlineViewCustomVideos(button:)),
-                        keyEquivalent: "",
-                        at: 10)
 
         let event = NSApp.currentEvent
         NSMenu.popUpContextMenu(menu, with: event!, for: button)
-    }
-
-    @objc func outlineViewCustomVideos(button: NSButton) {
-        customVideosController.show(sender: button, controller: self)
     }
 
     @objc func outlineViewUncheckAll(button: NSButton) {
@@ -340,41 +313,6 @@ extension PreferencesWindowController {
         preferences.synchronize()
 
         outlineView.reloadData()
-    }
-
-    @objc func outlineViewDownloadChecked(button: NSButton) {
-        guard let videos = videos else {
-            return
-        }
-        let videoManager = VideoManager.sharedInstance
-
-        for video in videos {
-            if preferences.videoIsInRotation(videoID: video.id) && !video.isAvailableOffline {
-                if !videoManager.isVideoQueued(id: video.id) {
-                    videoManager.queueDownload(video)
-                }
-            }
-        }
-    }
-
-    @objc func outlineViewDownloadAll(button: NSButton) {
-        downloadAllVideos()
-    }
-
-    func downloadAllVideos() {
-        let videoManager = VideoManager.sharedInstance
-        for city in cities {
-            for video in city.day.videos where !video.isAvailableOffline {
-                if !videoManager.isVideoQueued(id: video.id) {
-                    videoManager.queueDownload(video)
-                }
-            }
-            for video in city.night.videos where !video.isAvailableOffline {
-                if !videoManager.isVideoQueued(id: video.id) {
-                    videoManager.queueDownload(video)
-                }
-            }
-        }
     }
 
     func setAllVideos(inRotation: Bool) {
@@ -655,22 +593,25 @@ extension PreferencesWindowController {
             view.setVideo(video: video)     // For our Add button
             view.adaptIndicators()
 
-            if video.secondaryName != "" {
-                view.textField?.stringValue = video.secondaryName
+            // One based index
+            let number = video.arrayPosition + 1
+            let numberFormatter = NumberFormatter()
+
+            numberFormatter.numberStyle = NumberFormatter.Style.spellOut
+            guard
+                let numberString = numberFormatter.string(from: number as NSNumber)
+                else {
+                    errorLog("outlineView: failed to create number with formatter")
+                    return nil
+            }
+
+            if ( !video.poi.isEmpty ) {
+                let titleString:String = PoiStringProvider.sharedInstance.getString(key: video.poi["0"]!, video: video)
+                view.textField?.stringValue = titleString.components(separatedBy: NSCharacterSet.newlines )[0]
+
+//                view.textField?.stringValue = titleString.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet)[0]
             } else {
-                // One based index
-                let number = video.arrayPosition + 1
-                let numberFormatter = NumberFormatter()
-
-                numberFormatter.numberStyle = NumberFormatter.Style.spellOut
-                guard
-                    let numberString = numberFormatter.string(from: number as NSNumber)
-                    else {
-                        errorLog("outlineView: failed to create number with formatter")
-                        return nil
-                }
-
-                view.textField?.stringValue = numberString.capitalized
+                view.textField?.stringValue = video.name
             }
 
             let isInRotation = preferences.videoIsInRotation(videoID: video.id)

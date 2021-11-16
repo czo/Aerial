@@ -16,8 +16,6 @@ import CoreLocation
 // swiftlint:disable:next type_body_length
 final class PreferencesWindowController: NSWindowController, NSOutlineViewDataSource, NSOutlineViewDelegate {
 
-    lazy var customVideosController: CustomVideoController = CustomVideoController()
-
     // Main UI
     @IBOutlet weak var prefTabView: NSTabView!
     @IBOutlet weak var downloadProgressIndicator: NSProgressIndicator!
@@ -99,54 +97,6 @@ final class PreferencesWindowController: NSWindowController, NSOutlineViewDataSo
     @IBOutlet var infoTimerView: InfoTimerView!
     @IBOutlet var infoDateView: InfoDateView!
 
-    // Time Tab
-    @IBOutlet var iconTime1: NSImageCell!
-    @IBOutlet var iconTime2: NSImageCell!
-    @IBOutlet var iconTime3: NSImageCell!
-
-    @IBOutlet var timeCalculateRadio: NSButton!
-    @IBOutlet var latitudeTextField: NSTextField!
-    @IBOutlet var latitudeFormatter: NumberFormatter!
-    @IBOutlet var longitudeTextField: NSTextField!
-    @IBOutlet var longitudeFormatter: NumberFormatter!
-    @IBOutlet var findCoordinatesButton: NSButton!
-    @IBOutlet var extraLatitudeTextField: NSTextField!
-    @IBOutlet var extraLatitudeFormatter: NumberFormatter!
-    @IBOutlet var extraLongitudeTextField: NSTextField!
-    @IBOutlet var extraLongitudeFormatter: NumberFormatter!
-    @IBOutlet var enterCoordinatesButton: NSButton!
-    @IBOutlet var solarModePopup: NSPopUpButton!
-
-    @IBOutlet var timeNightShiftRadio: NSButton!
-    @IBOutlet var nightShiftLabel: NSTextField!
-
-    @IBOutlet var timeManualRadio: NSButton!
-    @IBOutlet var sunriseTime: NSDatePicker!
-    @IBOutlet var sunsetTime: NSDatePicker!
-
-    @IBOutlet var timeLightDarkModeRadio: NSButton!
-    @IBOutlet var lightDarkModeLabel: NSTextField!
-
-    @IBOutlet var timeDisabledRadio: NSButton!
-
-    @IBOutlet var enterCoordinatesPanel: NSPanel!
-    @IBOutlet var calculateCoordinatesLabel: NSTextField!
-
-    @IBOutlet var overrideNightOnDarkMode: NSButton!
-
-    // Brightness tab
-    @IBOutlet var dimBrightness: NSButton!
-    @IBOutlet var dimStartFrom: NSSlider!
-    @IBOutlet var dimFadeTo: NSSlider!
-
-    @IBOutlet var sleepAfterLabel: NSTextField!
-
-    @IBOutlet var overrideDimFadeCheckbox: NSButton!
-    @IBOutlet var dimFadeInMinutes: NSTextField!
-    @IBOutlet var dimFadeInMinutesStepper: NSStepper!
-    @IBOutlet var dimOnlyAtNight: NSButton!
-    @IBOutlet var dimOnlyOnBattery: NSButton!
-
     // Caches tab
     @IBOutlet var cacheAerialsAsTheyPlayCheckbox: NSButton!
     @IBOutlet var neverStreamVideosCheckbox: NSButton!
@@ -160,14 +110,6 @@ final class PreferencesWindowController: NSWindowController, NSOutlineViewDataSo
     @IBOutlet var checkNowButton: NSButton!
     @IBOutlet var lastCheckedVideosLabel: NSTextField!
 
-    @IBOutlet var automaticallyCheckForUpdatesCheckbox: NSButton!
-    @IBOutlet var allowScreenSaverModeUpdateCheckbox: NSButton!
-    @IBOutlet var sparkleScreenSaverMode: NSPopUpButton!
-    @IBOutlet var allowBetasCheckbox: NSButton!
-    @IBOutlet var betaCheckFrequencyPopup: NSPopUpButton!
-    @IBOutlet var lastCheckedSparkle: NSTextField!
-
-    @IBOutlet var silentInstallMenuItem: NSMenuItem!
     // Advanced Tab
     @IBOutlet weak var debugModeCheckbox: NSButton!
     @IBOutlet weak var showLogBottomClick: NSButton!
@@ -297,9 +239,9 @@ final class PreferencesWindowController: NSWindowController, NSOutlineViewDataSo
         logTableView.dataSource = self
 
         // Grab version from bundle
-        if let version = Bundle(identifier: "com.johncoates.Aerial-Test")?.infoDictionary?["CFBundleShortVersionString"] as? String {
+        if let version = Bundle(identifier: "hu.czo.TestPreferences")?.infoDictionary?["CFBundleShortVersionString"] as? String {
             versionButton.title = version
-        } else if let version = Bundle(identifier: "com.JohnCoates.Aerial")?.infoDictionary?["CFBundleShortVersionString"] as? String {
+        } else if let version = Bundle(identifier: "hu.czo.Aerial")?.infoDictionary?["CFBundleShortVersionString"] as? String {
             versionButton.title = version
         }
         debugLog("Aerial control panel V\(versionButton.title)")
@@ -307,31 +249,11 @@ final class PreferencesWindowController: NSWindowController, NSOutlineViewDataSo
         setupVideosTab()
         setupDisplaysTab()
         setupInfoTab()
-        setupTimeTab()
-        setupBrightnessTab()
         setupCacheTab()
         setupUpdatesTab()
         setupAdvancedTab()
 
         colorizeProjectPageLinks()
-
-        // To workaround our High Sierra issues with textfields, we have separate panels
-        // that replicate the features and are editable. They are hidden unless needed.
-        if #available(OSX 10.14, *) {
-            enterCoordinatesButton.isHidden = true
-        } else {
-            latitudeTextField.isEnabled = false
-            longitudeTextField.isEnabled = false
-        }
-
-        // We also load our CustomVideos nib here
-        let bundle = Bundle(for: PreferencesWindowController.self)
-        var topLevelObjects: NSArray? = NSArray()
-        if !bundle.loadNibNamed(NSNib.Name("CustomVideos"),
-                            owner: customVideosController,
-                            topLevelObjects: &topLevelObjects) {
-            errorLog("Could not load nib for CustomVideos, please report")
-        }
     }
 
     override func windowDidLoad() {
@@ -408,13 +330,7 @@ final class PreferencesWindowController: NSWindowController, NSOutlineViewDataSo
     @IBAction func versionButtonClick(_ sender: Any) {
         let workspace = NSWorkspace.shared
         var url: URL
-
-        if versionButton.title.contains("beta") {
-            url = URL(string: "https://github.com/JohnCoates/Aerial/releases/tag/v" + versionButton.title)!
-        } else {
-            url = URL(string: "https://github.com/JohnCoates/Aerial/blob/master/Documentation/ChangeLog.md")!
-        }
-
+        url = URL( string: "https://github.com/czo/Aerial/releases" )!
         workspace.open(url)
     }
 
@@ -422,7 +338,7 @@ final class PreferencesWindowController: NSWindowController, NSOutlineViewDataSo
 
     @IBAction func pageProjectClick(_ button: NSButton?) {
         let workspace = NSWorkspace.shared
-        let url = URL(string: "http://github.com/JohnCoates/Aerial")!
+        let url = URL(string: "https://github.com/czo/Aerial")!
         workspace.open(url)
     }
 

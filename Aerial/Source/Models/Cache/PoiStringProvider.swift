@@ -8,18 +8,6 @@
 
 import Foundation
 
-final class CommunityStrings {
-    let id: String
-    let name: String
-    let poi: [String: String]
-
-    init(id: String, name: String, poi: [String: String]) {
-        self.id = id
-        self.name = name
-        self.poi = poi
-    }
-}
-
 final class PoiStringProvider {
     static let sharedInstance = PoiStringProvider()
     var loadedDescriptions = false
@@ -28,8 +16,6 @@ final class PoiStringProvider {
     var stringBundle:Array<Bundle> = []
     var stringDict: [String: String]?
 
-    var communityStrings = [CommunityStrings]()
-    var communityLanguage = ""
     // MARK: - Lifecycle
     init() {
         debugLog("Poi Strings Provider initialized")
@@ -95,6 +81,7 @@ final class PoiStringProvider {
 
                 if let sd = NSDictionary(contentsOfFile: dictPath) as? [String: String] {
                     sourceStringDict = sourceStringDict.merging(sd) { (current, new ) in new }
+                    print(sd);
                 }
 
                 self.stringBundle.append(sb)
@@ -133,17 +120,13 @@ final class PoiStringProvider {
             }
         }*/
 
-        if !video.communityPoi.isEmpty {
-            return key  // We directly store the string in the key
-        } else {
-            for sb in self.stringBundle {
-                let retVal = sb.localizedString(forKey: key, value: "", table: "Localizable.nocache")
-                if ( retVal != key ) {
-                    return retVal
-                }
+        for sb in self.stringBundle {
+            let retVal = sb.localizedString(forKey: key, value: "", table: "Localizable.nocache")
+            if ( retVal != key ) {
+                return retVal
             }
-            return key
         }
+        return key
     }
 
     // Return all POIs for an id
@@ -154,182 +137,16 @@ final class PoiStringProvider {
         for key in stringDict.keys where key.starts(with: id) {
             found[String(key.split(separator: "_").last!)] = key // FIXME: crash if key doesn't have "_"
         }
-
         return found
     }
 
     // 
     func getPoiKeys(video: AerialVideo) -> [String: String] {
-        if !video.communityPoi.isEmpty {
-            return video.communityPoi
-        } else {
-            return video.poi
-        }
+        return video.poi
     }
 
     // Do we have any keys, anywhere, for said video ?
     func hasPoiKeys(video: AerialVideo) -> Bool {
-        return (!video.poi.isEmpty && loadedDescriptions) ||
-        (!video.communityPoi.isEmpty && !getPoiKeys(video: video).isEmpty)
-    }
-
-    // MARK: - Community data
-    // siftlint:disable:next cyclomatic_complexity
-    private func getCommunityPathForLocale() -> String {
-        let preferences = Preferences.sharedInstance
-        let locale: NSLocale = NSLocale(localeIdentifier: Locale.preferredLanguages[0])
-
-        // Do we have a language override ?
-        if preferences.ciOverrideLanguage != "" {
-            let path = Bundle(for: PoiStringProvider.self).path(forResource: preferences.ciOverrideLanguage, ofType: "json")
-            if path != nil {
-                let fileManager = FileManager.default
-                if fileManager.fileExists(atPath: path!) {
-                    debugLog("Community Language overriden to : \(preferences.ciOverrideLanguage!)")
-                    communityLanguage = preferences.ciOverrideLanguage!
-                    return path!
-                }
-            }
-        }
-
-        if #available(OSX 10.12, *) {
-            // First we look in the Cache Folder for a locale directory
-            let cacheDirectory = VideoCache.appSupportDirectory!
-            var cacheResourcesString = cacheDirectory
-            cacheResourcesString.append(contentsOf: "/locale")
-            let cacheUrl = URL(fileURLWithPath: cacheResourcesString)
-
-            if cacheUrl.hasDirectoryPath {
-                debugLog("Aerial cache directory contains /locale")
-
-                let cc = locale.languageCode
-                debugLog("Looking for \(cc).json")
-
-                let fileUrl = URL(fileURLWithPath: cacheResourcesString.appending("/\(cc).json"))
-                debugLog(fileUrl.absoluteString)
-                let fileManager = FileManager.default
-                if fileManager.fileExists(atPath: fileUrl.path) {
-                    debugLog("Locale description found")
-                    communityLanguage = cc
-                    return fileUrl.path
-                } else {
-                    debugLog("Locale description not found")
-                }
-            }
-            debugLog("Defaulting to bundle")
-            let cc = locale.languageCode
-
-            let path = Bundle(for: PoiStringProvider.self).path(forResource: cc, ofType: "json")
-            if path != nil {
-                let fileManager = FileManager.default
-                if fileManager.fileExists(atPath: path!) {
-                    communityLanguage = cc
-                    return path!
-                }
-            }
-        }
-
-        // Fallback to english in bundle
-        communityLanguage = "en"
-        return Bundle(for: PoiStringProvider.self).path(forResource: "en", ofType: "json")!
-    }
-
-    // Load the community strings
-    private func loadCommunity() {
-        let bundlePath = getCommunityPathForLocale()
-        debugLog("path : \(bundlePath)")
-
-        do {
-            let data = try Data(contentsOf: URL(fileURLWithPath: bundlePath), options: .mappedIfSafe)
-            let batches = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-
-            guard let batch = batches as? NSDictionary else {
-                errorLog("Community : Encountered unexpected content type for batch, please report !")
-                return
-            }
-
-            for item in batch {
-                let id = item.key as! String
-                let name = (item.value as! NSDictionary)["name"] as! String
-                let poi = (item.value as! NSDictionary)["pointsOfInterest"] as? [String: String]
-
-                communityStrings.append(CommunityStrings(id: id, name: name, poi: poi ?? [:]))
-            }
-        } catch {
-            // handle error
-            errorLog("Community JSON ERROR : \(error)")
-        }
-        debugLog("Community JSON : \(communityStrings.count) entries")
-    }
-
-    func getCommunityName(id: String) -> String? {
-        return communityStrings.first(where: { $0.id == id }).map { $0.name }
-    }
-
-    func getCommunityPoi(id: String) -> [String: String] {
-        return communityStrings.first(where: { $0.id == id }).map { $0.poi } ?? [:]
-    }
-
-    // Helpers for the main popup
-    // swiftlint:disable:next cyclomatic_complexity
-    func getLanguagePosition() -> Int {
-        let preferences = Preferences.sharedInstance
-        // The list is alphabetized based on their english name in the UI
-        switch preferences.ciOverrideLanguage {
-        case "ar":  // Arabic
-            return 1
-        case "zh_CN":  // Chinese Simplified
-            return 2
-        case "zh_TW":  // Chinese Traditional
-            return 3
-        case "nl":  // Dutch
-            return 4
-        case "en":  // English
-            return 5
-        case "fr":  // French
-            return 6
-        case "de":  // German
-            return 7
-        case "he":  // Hebrew
-            return 8
-        case "it":  // Italian
-            return 9
-        case "pl":  // Polish
-            return 10
-        case "es":  // Spanish
-            return 11
-        default:    // This is the default, preferred language
-            return 0
-        }
-    }
-
-    // swiftlint:disable:next cyclomatic_complexity
-    func getLanguageStringFromPosition(pos: Int) -> String {
-        switch pos {
-        case 1:
-            return "ar"
-        case 2:
-            return "zh_CN"
-        case 3:
-            return "zh_TW"
-        case 4:
-            return "nl"
-        case 5:
-            return "en"
-        case 6:
-            return "fr"
-        case 7:
-            return "de"
-        case 8:
-            return "he"
-        case 9:
-            return "it"
-        case 10:
-            return "pl"
-        case 11:
-            return "es"
-        default:
-            return ""
-        }
+        return !video.poi.isEmpty && loadedDescriptions
     }
 }

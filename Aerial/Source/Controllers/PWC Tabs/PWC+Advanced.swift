@@ -21,11 +21,11 @@ extension PreferencesWindowController {
 
         muteSoundCheckbox.state = PrefsAdvanced.muteSound ? .on : .off
 
-        // Grab preferred language as proper string
-        currentLocaleLabel.stringValue = getPreferredLanguage()
+//        // Grab preferred language as proper string
+//        currentLocaleLabel.stringValue = getPreferredLanguage()
 
         let poisp = PoiStringProvider.sharedInstance
-        languagePopup.selectItem(at: poisp.getLanguagePosition())
+//        languagePopup.selectItem(at: poisp.getLanguagePosition())
 
 //        secondaryMarginHorizontalTextfield.stringValue = String(preferences.marginX!)
 //        secondaryMarginVerticalTextfield.stringValue = String(preferences.marginY!)
@@ -141,26 +141,4 @@ extension PreferencesWindowController {
         }
 
     }
-
-    // MARK: - Language picker
-
-    @IBAction func languagePopupChange(_ sender: NSPopUpButton) {
-        debugLog("UI languageChange: \(sender.indexOfSelectedItem)")
-        let poisp = PoiStringProvider.sharedInstance
-        preferences.ciOverrideLanguage = poisp.getLanguageStringFromPosition(pos: sender.indexOfSelectedItem)
-    }
-
-    func getPreferredLanguage() -> String {
-        let printOutputLocale: NSLocale = NSLocale(localeIdentifier: Locale.preferredLanguages[0])
-        if let deviceLanguageName: String = printOutputLocale.displayName(forKey: .identifier, value: Locale.preferredLanguages[0]) {
-            if #available(OSX 10.12, *) {
-                return "Preferred language: \(deviceLanguageName) [\(printOutputLocale.languageCode)]"
-            } else {
-                return "Preferred language: \(deviceLanguageName)"
-            }
-        } else {
-            return ""
-        }
-    }
-
 }

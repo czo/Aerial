@@ -23,39 +23,16 @@ final class Preferences {
         case showDescriptionsMode = "showDescriptionsMode"
         case neverStreamVideos = "neverStreamVideos"
         case neverStreamPreviews = "neverStreamPreviews"
-//        case timeMode = "timeMode"
-//        case manualSunrise = "manualSunrise"
-//        case manualSunset = "manualSunset"
-//        case fadeMode = "fadeMode"
-//        case fadeModeText = "fadeModeText"
         case descriptionCorner = "descriptionCorner"
 
         case debugMode = "debugMode"
         case logToDisk = "logToDisk"
         case versionCheck = "versionCheck"
         case alsoVersionCheckBeta = "alsoVersionCheckBeta"
-//        case latitude = "latitude"
-//        case longitude = "longitude"
-
-        case dimBrightness = "dimBrightness"
-        case startDim = "startDim"
-        case endDim = "endDim"
-        case dimOnlyAtNight = "dimOnlyAtNight"
-        case dimOnlyOnBattery = "dimOnlyOnBattery"
-        case dimInMinutes = "dimInMinutes"
-        case overrideDimInMinutes = "overrideDimInMinutes"
-//        case solarMode = "solarMode"
-
-//        case overrideMargins = "overrideMargins"
-//        case marginX = "marginX"
-//        case marginY = "marginY"
-
-//        case darkModeNightOverride = "darkModeNightOverride"
         case newVideosMode = "newVideosMode"
         case lastVideoCheck = "lastVideoCheck"
         case ciOverrideLanguage = "ciOverrideLanguage"
         case videoSets = "videoSets"
-//        case allowSkips = "allowSkips"
         case updateWhileSaverMode = "updateWhileSaverMode"
         case allowBetas = "allowBetas"
         case betaCheckFrequency = "betaCheckFrequency"
@@ -117,7 +94,7 @@ final class Preferences {
     static let sharedInstance = Preferences()
 
     lazy var userDefaults: UserDefaults = {
-        let module = "com.JohnCoates.Aerial"
+        let module = "hu.czo.Aerial"
 
         guard let userDefaults = ScreenSaverDefaults(forModuleWithName: module) else {
             warnLog("Couldn't create ScreenSaverDefaults, creating generic UserDefaults")
@@ -154,13 +131,6 @@ final class Preferences {
         defaultValues[.alsoVersionCheckBeta] = false
 //        defaultValues[.latitude] = ""
 //        defaultValues[.longitude] = ""
-        defaultValues[.dimBrightness] = false
-        defaultValues[.startDim] = 0.5
-        defaultValues[.endDim] = 0.0
-        defaultValues[.dimOnlyAtNight] = false
-        defaultValues[.dimOnlyOnBattery] = false
-        defaultValues[.dimInMinutes] = 30
-        defaultValues[.overrideDimInMinutes] = false
 //        defaultValues[.solarMode] = SolarMode.official
 //        defaultValues[.overrideMargins] = false
 //        defaultValues[.marginX] = 50
@@ -172,7 +142,6 @@ final class Preferences {
         defaultValues[.newVideosMode] = NewVideosMode.weekly
         defaultValues[.ciOverrideLanguage] = ""
         defaultValues[.videoSets] = [String: [String]]()
-//        defaultValues[.allowSkips] = true
         defaultValues[.updateWhileSaverMode] = true
         defaultValues[.allowBetas] = false
         defaultValues[.betaCheckFrequency] = BetaCheckFrequency.daily
@@ -368,24 +337,6 @@ final class Preferences {
         }
     }
 
-//    var allowSkips: Bool {
-//        get {
-//            return value(forIdentifier: .allowSkips)
-//        }
-//        set {
-//            setValue(forIdentifier: .allowSkips, value: newValue)
-//        }
-//    }
-
-    var overrideDimInMinutes: Bool {
-        get {
-            return value(forIdentifier: .overrideDimInMinutes)
-        }
-        set {
-            setValue(forIdentifier: .overrideDimInMinutes, value: newValue)
-        }
-    }
-
 //    var darkModeNightOverride: Bool {
 //        get {
 //            return value(forIdentifier: .darkModeNightOverride)
@@ -413,33 +364,6 @@ final class Preferences {
 //        }
 //    }
 
-    var dimBrightness: Bool {
-        get {
-            return value(forIdentifier: .dimBrightness)
-        }
-        set {
-            setValue(forIdentifier: .dimBrightness, value: newValue)
-        }
-    }
-
-    var dimOnlyAtNight: Bool {
-        get {
-            return value(forIdentifier: .dimOnlyAtNight)
-        }
-        set {
-            setValue(forIdentifier: .dimOnlyAtNight, value: newValue)
-        }
-    }
-
-    var dimOnlyOnBattery: Bool {
-        get {
-            return value(forIdentifier: .dimOnlyOnBattery)
-        }
-        set {
-            setValue(forIdentifier: .dimOnlyOnBattery, value: newValue)
-        }
-    }
-
 //    var overrideMargins: Bool {
 //        get {
 //            return value(forIdentifier: .overrideMargins)
@@ -448,15 +372,6 @@ final class Preferences {
 //            setValue(forIdentifier: .overrideMargins, value: newValue)
 //        }
 //    }
-
-    var dimInMinutes: Int? {
-        get {
-            return optionalValue(forIdentifier: .dimInMinutes)
-        }
-        set {
-            setValue(forIdentifier: .dimInMinutes, value: newValue)
-        }
-    }
 
 //    var marginX: Int? {
 //        get {
@@ -619,24 +534,6 @@ final class Preferences {
 //            setValue(forIdentifier: .fontName, value: newValue)
 //        }
 //    }
-
-    var startDim: Double? {
-        get {
-            return optionalValue(forIdentifier: .startDim)
-        }
-        set {
-            setValue(forIdentifier: .startDim, value: newValue)
-        }
-    }
-
-    var endDim: Double? {
-        get {
-            return optionalValue(forIdentifier: .endDim)
-        }
-        set {
-            setValue(forIdentifier: .endDim, value: newValue)
-        }
-    }
 
 //    var fontSize: Double? {
 //        get {

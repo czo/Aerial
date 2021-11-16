@@ -431,7 +431,7 @@ struct PrefsInfo {
 @propertyWrapper struct Storage<T: Codable> {
     private let key: String
     private let defaultValue: T
-    private let module = "com.JohnCoates.Aerial"
+    private let module = "hu.czo.Aerial"
 
     init(key: String, defaultValue: T) {
         self.key = key
@@ -493,7 +493,7 @@ struct PrefsInfo {
 @propertyWrapper struct SimpleStorage<T> {
     private let key: String
     private let defaultValue: T
-    private let module = "com.JohnCoates.Aerial"
+    private let module = "hu.czo.Aerial"
 
     init(key: String, defaultValue: T) {
         self.key = key

@@ -149,11 +149,9 @@ class ManifestLoader {
     ]
 
     // MARK: - Playlist generation
-    func generatePlaylist(isRestricted: Bool, restrictedTo: String) {
+    func generatePlaylist() {
         // Start fresh
         playlist = [AerialVideo]()
-        playlistIsRestricted = isRestricted
-        playlistRestrictedTo = restrictedTo
 
         // Start with a shuffled list, we may have synchronized seed shuffle
         var shuffled: [AerialVideo]
@@ -185,12 +183,6 @@ class ManifestLoader {
                 continue
             }
 
-            // Do we restrict video types by day/night ?
-            if isRestricted {
-                if video.timeOfDay != restrictedTo {
-                    continue
-                }
-            }
 
             // We may not want to stream
             if preferences.neverStreamVideos == true {
@@ -211,12 +203,10 @@ class ManifestLoader {
 
     func randomVideo(excluding: [AerialVideo]) -> (AerialVideo?, Bool) {
         var shouldLoop = false
-        let timeManagement = TimeManagement.sharedInstance
-        let (shouldRestrictByDayNight, restrictTo) = timeManagement.shouldRestrictPlaybackToDayNightVideo()
 
         // We may need to regenerate a playlist!
-        if playlist.isEmpty || restrictTo != playlistRestrictedTo || shouldRestrictByDayNight != playlistIsRestricted {
-            generatePlaylist(isRestricted: shouldRestrictByDayNight, restrictedTo: restrictTo)
+        if playlist.isEmpty {
+            generatePlaylist()
             if playlist.count == 1 {
                 debugLog("playlist only has one element, looping!")
                 shouldLoop = true
@@ -281,7 +271,6 @@ class ManifestLoader {
     init() {
         debugLog("Manifest init")
         // tmp
-        loadCustomVideos()
         // We try to load our video manifests in 3 steps :
         // - reload from local variables (unused for now, maybe with previews+screensaver
         // in some weird edge case on some systems)
@@ -415,77 +404,6 @@ class ManifestLoader {
     }
 
     // MARK: - Custom videos
-    func loadCustomVideos() {
-        do {
-            if let cacheDirectory = VideoCache.appSupportDirectory {
-                // customvideos.json
-                var cacheFileUrl = URL(fileURLWithPath: cacheDirectory as String)
-                cacheFileUrl.appendPathComponent("customvideos.json")
-                if FileManager.default.fileExists(atPath: cacheFileUrl.path) {
-                    debugLog("loading custom file : \(cacheFileUrl)")
-                    let ndata = try Data(contentsOf: cacheFileUrl)
-                    customVideoFolders = try CustomVideoFolders(data: ndata)
-                } else {
-                    debugLog("No customvideos.json at : \(cacheFileUrl.path)")
-                }
-            }
-        } catch {
-            debugLog("Error loading customvideos.json : \(error)")
-        }
-    }
-
-    func saveCustomVideos() {
-        if let cvf = customVideoFolders, let cacheDirectory = VideoCache.appSupportDirectory {
-            var cacheFileUrl = URL(fileURLWithPath: cacheDirectory as String)
-            cacheFileUrl.appendPathComponent("customvideos.json")
-
-            do {
-                if let encodedData = try? cvf.jsonData() {
-                    try encodedData.write(to: cacheFileUrl)
-                    debugLog("customvideos.json saved successfully!")
-                    loadedManifest.removeAll()  // we remove our previously loaded manifest, it's invalid
-                }
-            } catch let error as NSError {
-                errorLog("customvideos.json could not be saved: \(error.localizedDescription)")
-            }
-        }
-    }
-
-    // This is where we merge with the processed list
-    func mergeCustomVideos() {
-        if let cvf = customVideoFolders {
-            for folder in cvf.folders {
-                for asset in folder.assets {
-                    let avResolution = getResolution(asset: AVAsset(url: URL(fileURLWithPath: asset.url)))
-                    var url1080p = ""
-                    var url4K = ""
-
-                    if avResolution.height > 1080 {
-                        url4K = URL(fileURLWithPath: asset.url).absoluteString
-                    } else {
-                        url1080p = URL(fileURLWithPath: asset.url).absoluteString
-                    }
-
-                    let urls: [VideoFormat: String] = [.v1080pH264: url1080p,
-                                                       .v1080pHEVC: url1080p,
-                                                       .v1080pHDR: url1080p,
-                                                       .v4KHEVC: url4K,
-                                                       .v4KHDR: url4K, ]
-                    let video = AerialVideo(id: asset.id,
-                                                name: folder.label,
-                                                secondaryName: asset.accessibilityLabel,
-                                                type: "video",
-                                                timeOfDay: asset.time,
-                                                urls: urls,
-                                                manifest: .customVideos,
-                                                poi: [:],
-                                                communityPoi: asset.pointsOfInterest)
-                    processedVideos.append(video)
-                }
-            }
-        }
-    }
-
     func getResolution(asset: AVAsset) -> CGSize {
         guard let track = asset.tracks(withMediaType: AVMediaType.video).first else { return CGSize.zero }
         let size = track.naturalSize.applying(track.preferredTransform)
@@ -717,7 +635,7 @@ class ManifestLoader {
             readJSONFromData(manifestTvOS12!, manifest: .tvOS12)
 
             // We also need to add the missing videos
-            let bundlePath = Bundle(for: ManifestLoader.self).path(forResource: "missingvideos", ofType: "json")!
+            let bundlePath = Bundle(for: ManifestLoader.self).path(forResource: "missingvideos-tvos12", ofType: "json")!
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: bundlePath), options: .mappedIfSafe)
                 readJSONFromData(data, manifest: .tvOS12)
@@ -742,12 +660,8 @@ class ManifestLoader {
             warnLog("tvOS10 manifest is absent")
         }
 
-        if customVideoFolders != nil {
-            mergeCustomVideos()
-        }
-
         // We sort videos by secondary names, so they can display sorted in our view later
-        processedVideos = processedVideos.sorted { $0.secondaryName < $1.secondaryName }
+        processedVideos = processedVideos.sorted { $0.name < $1.name }
 
         self.loadedManifest = processedVideos
 
@@ -790,9 +704,9 @@ class ManifestLoader {
                                                    .v4KHDR: url4KHDR ?? "", ]
                 var secondaryName = ""
                 // We may have a secondary name
-                if let mergename = poiStringProvider.getCommunityName(id: id) {
-                    secondaryName = mergename
-                }
+//                if let mergename = poiStringProvider.getCommunityName(id: id) {
+//                    secondaryName = mergename
+//                }
 
                 let timeOfDay = "day"   // TODO, this is hardcoded as it's no longer available in the modern JSONs
                 let type = "video"
@@ -803,7 +717,9 @@ class ManifestLoader {
                     poi = item["pointsOfInterest"] as? [String: String]
                 }
 
-                let communityPoi = poiStringProvider.getCommunityPoi(id: id)
+                let communityPoi:[String: String] = [:]
+
+//                let communityPoi = poiStringProvider.getCommunityPoi(id: id)
 
                 let (isDupe, foundDupe) = findDuplicate(id: id, url1080pH264: url1080pH264 ?? "")
                 if isDupe {
@@ -850,12 +766,6 @@ class ManifestLoader {
                         continue
                     }
 
-                    // We may have a secondary name
-                    var secondaryName = ""
-                    if let mergename = poiStringProvider.getCommunityName(id: id) {
-                        secondaryName = mergename
-                    }
-
                     // We may have POIs to merge
                     var poi: [String: String]?
                     if let mergeId = mergePOI[id] {
@@ -863,7 +773,7 @@ class ManifestLoader {
                         poi = poiStringProvider.fetchExtraPoiForId(id: mergeId)
                     }
 
-                    let communityPoi = poiStringProvider.getCommunityPoi(id: id)
+                    let communityPoi:[String: String] = [:]
 
                     // We may have dupes...
                     let (isDupe, foundDupe) = findDuplicate(id: id, url1080pH264: url)
@@ -898,7 +808,7 @@ class ManifestLoader {
                         // Now we can finally add...
                         let video = AerialVideo(id: id,             // Must have
                             name: name,         // Must have
-                            secondaryName: secondaryName,
+                            secondaryName: "",
                             type: type,         // Not sure the point of this one ?
                             timeOfDay: timeOfDay,
                             urls: urls,

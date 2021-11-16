@@ -103,26 +103,4 @@ extension PreferencesWindowController {
             }
         }
     }
-
-    // This is part of the Catalina workaround of showing a Panel
-    @IBAction func validateChangeFolderButton(_ sender: Any) {
-        debugLog("Changed cache Folder to : \(cacheFolderTextField.stringValue)")
-        self.preferences.customCacheDirectory = cacheFolderTextField.stringValue
-        self.cacheLocation.url = URL(fileURLWithPath: cacheFolderTextField.stringValue)
-        changeCacheFolderPanel.close()
-    }
-
-    @IBAction func resetCacheLocation(_ button: NSButton?) {
-        preferences.customCacheDirectory = nil
-        if let cacheDirectory = VideoCache.appSupportDirectory {
-            preferences.customCacheDirectory = cacheDirectory
-            cacheLocation.url = URL(fileURLWithPath: cacheDirectory as String)
-        }
-    }
-
-    @IBAction func downloadNowButton(_ sender: Any) {
-        downloadNowButton.isEnabled = false
-        prefTabView.selectTabViewItem(at: 0)
-        downloadAllVideos()
-    }
 }

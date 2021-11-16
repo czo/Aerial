@@ -97,11 +97,7 @@ class LocationLayer: AnimationTextLayer {
         } else {
             // We don't have any extended description, using Secondary name (location) or video name (City)
             let str: String
-            if video.secondaryName != "" {
-                str = video.secondaryName
-            } else {
-                str = video.name
-            }
+            str = video.name
 
             let duration = self.calculateAnimationDuration(times: [], current: CMTime.zero, video: video)
             let fadeAnimation = self.createFadeInOutAnimation(duration: duration)

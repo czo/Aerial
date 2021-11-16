@@ -174,7 +174,7 @@ final class AerialView: ScreenSaverView, CAAnimationDelegate {
 
     // swiftlint:disable:next cyclomatic_complexity
     func setup() {
-        if let version = Bundle(identifier: "com.JohnCoates.Aerial")?.infoDictionary?["CFBundleShortVersionString"] as? String {
+        if let version = Bundle(identifier: "hu.czo.Aerial")?.infoDictionary?["CFBundleShortVersionString"] as? String {
             debugLog("\(self.description) AerialView setup init (V\(version)) preview: \(self.isPreview)")
         }
 
@@ -188,13 +188,9 @@ final class AerialView: ScreenSaverView, CAAnimationDelegate {
                 || (PrefsVideos.onBatteryMode == .disableOnLow && Battery.isLow()) {
                 debugLog("Engaging power saving mode")
                 isDisabled = true
-                Brightness.set(level: 0.0)
                 return
             }
         }
-
-        // We may need to set timers to progressively dim the screen
-        checkIfShouldSetBrightness()
 
         // Shared views can get stuck, we may need to clean them up here
         cleanupSharedViews()
@@ -338,13 +334,6 @@ final class AerialView: ScreenSaverView, CAAnimationDelegate {
         }
 
         let preferences = Preferences.sharedInstance
-
-        if preferences.dimBrightness {
-            if !isPreview && brightnessToRestore != nil {
-                Brightness.set(level: brightnessToRestore!)
-                brightnessToRestore = nil
-            }
-        }
     }
 
     // Wait for the player to be ready
@@ -473,40 +462,6 @@ final class AerialView: ScreenSaverView, CAAnimationDelegate {
                                        name: NSNotification.Name.AVPlayerItemPlaybackStalled,
                                        object: currentItem)
         player.actionAtItemEnd = AVPlayer.ActionAtItemEnd.none
-    }
-
-    override func keyDown(with event: NSEvent) {
-        debugLog("keyDown")
-
-        if PrefsVideos.allowSkips {
-            if event.keyCode == 124 {
-                if !isQuickFading {
-                    // If we share, just call this on our main view
-                    if AerialView.sharingPlayers {
-                        // The first view with the player gets the fade and the play next instruction,
-                        // it controls the others
-                        for view in AerialView.sharedViews where AerialView.sharedViews.first != view {
-                            view.fastFadeOut(andPlayNext: false)
-                        }
-                        AerialView.sharedViews.first!.fastFadeOut(andPlayNext: true)
-
-                    } else {
-                        // If we do independant playback we have to skip all views
-                        for view in AerialView.instanciatedViews {
-                            view.fastFadeOut(andPlayNext: true)
-                        }
-                    }
-                } else {
-                    debugLog("Right arrow key currently locked")
-                }
-            } else {
-                self.nextResponder!.keyDown(with: event)
-                //super.keyDown(with: event)
-            }
-        } else {
-            self.nextResponder?.keyDown(with: event)
-            //super.keyDown(with: event)
-        }
     }
 
     override var acceptsFirstResponder: Bool {

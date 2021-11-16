@@ -15,10 +15,7 @@ enum VideoStatus {
 final class CheckCellView: NSTableCellView {
 
     @IBOutlet var checkButton: NSButton!
-    @IBOutlet var addButton: NSButton!
-    @IBOutlet var progressIndicator: NSProgressIndicator!
     @IBOutlet var formatLabel: NSTextField!
-    @IBOutlet var queuedImage: NSImageView!
     @IBOutlet var mainTextField: NSTextField!
 
     var onCheck: ((Bool) -> Void)?
@@ -53,37 +50,15 @@ final class CheckCellView: NSTableCellView {
     func adaptIndicators() {
         let videoManager = VideoManager.sharedInstance
 
-        if #available(OSX 10.12.2, *) {
-            queuedImage.image = NSImage(named: NSImage.touchBarDownloadTemplateName)
-        }
-        if video!.isAvailableOffline {
-            status = .downloaded
-            addButton.isHidden = true
-            progressIndicator.isHidden = true
-            queuedImage.isHidden = true
-        } else if videoManager.isVideoQueued(id: video!.id) {
-            status = .queued
-            addButton.isHidden = true
-            progressIndicator.isHidden = true
-            queuedImage.isHidden = false
-        } else {
             status = .notAvailable
-            addButton.isHidden = false
-            progressIndicator.isHidden = true
-            queuedImage.isHidden = true
-        }
 
         formatLabel.isHidden = !(video!.has4KVersion())
     }
 
     func updateProgressIndicator(progress: Double) {
         if status != .downloading {
-            addButton.isHidden = true
-            progressIndicator.isHidden = false
-            queuedImage.isHidden = true
             status = .downloading
         }
-        progressIndicator.doubleValue = Double(progress)
     }
 
     // Add video handling
@@ -92,9 +67,6 @@ final class CheckCellView: NSTableCellView {
     }
 
     func markAsDownloaded() {
-        addButton.isHidden = true
-        progressIndicator.isHidden = true
-        queuedImage.isHidden = true
         status = .downloaded
 
         debugLog("Video download finished")
@@ -102,9 +74,6 @@ final class CheckCellView: NSTableCellView {
     }
 
     func markAsNotDownloaded() {
-        addButton.isHidden = false
-        progressIndicator.isHidden = true
-        queuedImage.isHidden = true
         status = .notAvailable
 
         debugLog("Video download finished with error/cancel")
@@ -113,9 +82,6 @@ final class CheckCellView: NSTableCellView {
     func markAsQueued() {
         debugLog("Queued \(video!)")
         status = .queued
-        addButton.isHidden = true
-        progressIndicator.isHidden = true
-        queuedImage.isHidden = false
     }
 
     func queueVideo() {

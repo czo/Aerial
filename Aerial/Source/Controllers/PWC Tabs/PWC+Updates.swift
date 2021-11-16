@@ -24,15 +24,6 @@ extension PreferencesWindowController {
         preferences.newVideosMode = sender.indexOfSelectedItem
     }
 
-    @IBAction func betaCheckFrequencyChange(_ sender: NSPopUpButton) {
-        debugLog("UI betaCheckFrequency: \(sender.indexOfSelectedItem)")
-        preferences.betaCheckFrequency = sender.indexOfSelectedItem
-    }
-
-    @IBAction func popoverUpdateClick(_ button: NSButton) {
-        popoverUpdate.show(relativeTo: button.preparedContentRect, of: button, preferredEdge: .maxY)
-    }
-
     // Json updates
     @IBAction func checkNowButtonClick(_ sender: NSButton) {
         checkNowButton.isEnabled = false

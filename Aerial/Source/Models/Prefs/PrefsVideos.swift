@@ -66,8 +66,4 @@ struct PrefsVideos {
             intFadeMode = value.rawValue
         }
     }
-
-    // Allow video skips with right arrow key (on supporting OSes)
-    @SimpleStorage(key: "allowSkips", defaultValue: true)
-    static var allowSkips: Bool
 }

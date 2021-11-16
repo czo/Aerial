@@ -8,6 +8,7 @@
 
 import Foundation
 import AVKit
+import IOKit
 
 class BatteryIconLayer: AnimationLayer {
     var config: PrefsInfo.Battery?
