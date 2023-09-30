@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FACAF1A41BD9FC6000E539DC"
-               BuildableName = "Aerial.saver"
-               BlueprintName = "Aerial"
+               BuildableName = "AerialClassic.saver"
+               BlueprintName = "AerialClassic"
                ReferencedContainer = "container:Aerial.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -51,8 +51,8 @@
                   <BuildableReference
                      BuildableIdentifier = "primary"
                      BlueprintIdentifier = "FACAF1A41BD9FC6000E539DC"
-                     BuildableName = "Aerial.saver"
-                     BlueprintName = "Aerial"
+                     BuildableName = "AerialClassic.saver"
+                     BlueprintName = "AerialClassic"
                      ReferencedContainer = "container:Aerial.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
@@ -68,8 +68,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FACAF1A41BD9FC6000E539DC"
-            BuildableName = "Aerial.saver"
-            BlueprintName = "Aerial"
+            BuildableName = "AerialClassic.saver"
+            BlueprintName = "AerialClassic"
             ReferencedContainer = "container:Aerial.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,7 +83,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-module &quot;Aerial&quot;"
+            argument = "-module &quot;AerialClassic&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
@@ -102,8 +102,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FACAF1A41BD9FC6000E539DC"
-            BuildableName = "Aerial.saver"
-            BlueprintName = "Aerial"
+            BuildableName = "AerialClassic.saver"
+            BlueprintName = "AerialClassic"
             ReferencedContainer = "container:Aerial.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

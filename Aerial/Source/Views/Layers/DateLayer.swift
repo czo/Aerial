@@ -8,6 +8,7 @@
 
 import Foundation
 import AVKit
+import CoreWLAN
 
 class DateLayer: AnimationTextLayer {
     var config: PrefsInfo.IDate?
@@ -46,15 +47,20 @@ class DateLayer: AnimationTextLayer {
         if !wasSetup {
             wasSetup = true
 
-            if #available(OSX 10.12, *) {
-                dateTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (_) in
-                    self.update(string: self.getTimeString())
-                })
-            }
+//            if #available(OSX 10.12, *) {
+//                dateTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (_) in
+//                    self.update(string: self.getTimeString())
+//                })
+//            }
+//
+//            update(string: getTimeString())
 
-            update(string: getTimeString())
             let fadeAnimation = self.createFadeInAnimation()
             add(fadeAnimation, forKey: "textfade")
+        }
+        let interface = CWInterface(interfaceName: nil )
+        if let wifiESSID = interface.ssid() {
+            self.update(string: wifiESSID )
         }
     }
 

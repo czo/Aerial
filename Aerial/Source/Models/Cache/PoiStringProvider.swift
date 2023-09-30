@@ -48,8 +48,8 @@ final class PoiStringProvider {
                 bundlePath13.append(contentsOf: "/TVIdleScreenStrings13.bundle/" + match + ".lproj/")
                 var bundlePath15 = appSupportDirectory
                 bundlePath15.append(contentsOf: "/TVIdleScreenStrings15.bundle/" + match + ".lproj/")
-                bundlePath.append( bundlePath13 )
                 bundlePath.append( bundlePath15 )
+                bundlePath.append( bundlePath13 )
             } else {
                 debugLog("No match, reverting to english")
                 // We load the bundle and let system grab the closest available preferred language
@@ -59,8 +59,8 @@ final class PoiStringProvider {
                 bundlePath13.append(contentsOf: "/TVIdleScreenStrings13.bundle")
                 var bundlePath15 = appSupportDirectory
                 bundlePath15.append(contentsOf: "/TVIdleScreenStrings15.bundle")
-                bundlePath.append( bundlePath13 )
                 bundlePath.append( bundlePath15 )
+                bundlePath.append( bundlePath13 )
             }
         } else {
             debugLog("Language overriden to \(String(describing: preferences.ciOverrideLanguage))")
@@ -69,8 +69,8 @@ final class PoiStringProvider {
             bundlePath13.append(contentsOf: "/TVIdleScreenStrings13.bundle/" + preferences.ciOverrideLanguage! + ".lproj/")
             var bundlePath15 = appSupportDirectory
             bundlePath15.append(contentsOf: "/TVIdleScreenStrings15.bundle/" + preferences.ciOverrideLanguage! + ".lproj/")
-            bundlePath.append( bundlePath13 )
             bundlePath.append( bundlePath15 )
+            bundlePath.append( bundlePath13 )
         }
 
         var sourceStringDict : [String: String] = [:]
@@ -131,6 +131,7 @@ final class PoiStringProvider {
 
     // Return all POIs for an id
     func fetchExtraPoiForId(id: String) -> [String: String]? {
+        print("fetchExtraPoiForId: ", id)
         guard let stringDict = stringDict, ensureLoadedBundle() else { return [:] }
 
         var found = [String: String]()

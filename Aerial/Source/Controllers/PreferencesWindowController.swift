@@ -166,8 +166,6 @@ final class PreferencesWindowController: NSWindowController, NSOutlineViewDataSo
 
     var savedBrightness: Float?
 
-    var locationManager: CLLocationManager?
-
     // Info tab
     var infoSource: InfoTableSource?
     var infoSettingsSource: InfoSettingsTableSource?

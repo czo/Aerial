@@ -593,23 +593,21 @@ extension PreferencesWindowController {
             view.setVideo(video: video)     // For our Add button
             view.adaptIndicators()
 
-            // One based index
-            let number = video.arrayPosition + 1
-            let numberFormatter = NumberFormatter()
-
-            numberFormatter.numberStyle = NumberFormatter.Style.spellOut
-            guard
-                let numberString = numberFormatter.string(from: number as NSNumber)
-                else {
-                    errorLog("outlineView: failed to create number with formatter")
-                    return nil
-            }
+//            // One based index
+//            let number = video.arrayPosition + 1
+//            let numberFormatter = NumberFormatter()
+//
+//            numberFormatter.numberStyle = NumberFormatter.Style.spellOut
+//            guard
+//                let numberString = numberFormatter.string(from: number as NSNumber)
+//                else {
+//                    errorLog("outlineView: failed to create number with formatter")
+//                    return nil
+//            }
 
             if ( !video.poi.isEmpty ) {
                 let titleString:String = PoiStringProvider.sharedInstance.getString(key: video.poi["0"]!, video: video)
                 view.textField?.stringValue = titleString.components(separatedBy: NSCharacterSet.newlines )[0]
-
-//                view.textField?.stringValue = titleString.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet)[0]
             } else {
                 view.textField?.stringValue = video.name
             }
