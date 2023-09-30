@@ -149,9 +149,86 @@ final class AerialView: ScreenSaverView, CAAnimationDelegate {
         setup()
     }
 
+    func clearNotifications() {
+        NotificationCenter.default.removeObserver(self)
+        DistributedNotificationCenter.default.removeObserver(self)
+    }
+
+    func setNotifications(_ currentItem: AVPlayerItem) {
+        let notificationCenter = NotificationCenter.default
+
+        notificationCenter.addObserver(self,
+                                       selector: #selector(AerialView.playerItemDidReachEnd(_:)),
+                                       name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
+                                       object: currentItem)
+        notificationCenter.addObserver(self,
+                                       selector: #selector(AerialView.playerItemNewErrorLogEntryNotification(_:)),
+                                       name: NSNotification.Name.AVPlayerItemNewErrorLogEntry,
+                                       object: currentItem)
+        notificationCenter.addObserver(self,
+                                       selector: #selector(AerialView.playerItemFailedtoPlayToEnd(_:)),
+                                       name: NSNotification.Name.AVPlayerItemFailedToPlayToEndTime,
+                                       object: currentItem)
+        notificationCenter.addObserver(self,
+                                       selector: #selector(AerialView.playerItemPlaybackStalledNotification(_:)),
+                                       name: NSNotification.Name.AVPlayerItemPlaybackStalled,
+                                       object: currentItem)
+
+
+        DistributedNotificationCenter.default.addObserver(self,
+            selector: #selector(AerialView.willStart(_:)),
+            name: Notification.Name("com.apple.screensaver.willstart"), object: nil)
+        DistributedNotificationCenter.default.addObserver(self,
+            selector: #selector(AerialView.willStop(_:)),
+            name: Notification.Name("com.apple.screensaver.willstop"), object: nil)
+        DistributedNotificationCenter.default.addObserver(self,
+            selector: #selector(AerialView.screenIsUnlocked(_:)),
+            name: Notification.Name("com.apple.screenIsUnlocked"), object: nil)
+    }
+
+    @objc func willStart(_ aNotification: Notification) {
+//        if Aerial.helper.underCompanion {
+//            debugLog("🖼️ 📢📢📢 willStart")
+//            player?.pause()
+//        }
+    }
+
+    @objc func screenIsUnlocked(_ aNotification: Notification) {
+        if #available(macOS 14.0, *) {
+            self.stopAnimation()
+            debugLog("🖼️ 📢📢📢 ☢️sonoma☢️ workaround screenIsUnlocked")
+//            if !Aerial.helper.underCompanion {
+//                if let player = player {
+//                    player.pause()
+//                }
+//                self.stopAnimation()
+//            } else {
+//                player?.play()
+//            }
+        }
+    }
+
+    @objc func willStop(_ aNotification: Notification) {
+        if #available(macOS 14.0, *) {
+            debugLog("🖼️ 📢📢📢 🖼️ 📢📢📢 ☢️sonoma☢️ workaround IGNORING willStop")
+        } else {
+            self.stopAnimation()
+//            debugLog("🖼️ 📢📢📢 willStop")
+//            if !Aerial.helper.underCompanion {
+//                if let player = player {
+//                    player.pause()
+//                }
+//                self.stopAnimation()
+//            } else {
+//                player?.play()
+//            }
+        }
+    }
+
+
     deinit {
         debugLog("\(self.description) deinit AerialView")
-        NotificationCenter.default.removeObserver(self)
+        self.clearNotifications()
 
         // set player item to nil if not preview player
         if player != AerialView.previewPlayer {
@@ -365,7 +442,6 @@ final class AerialView: ScreenSaverView, CAAnimationDelegate {
     // MARK: - playNextVideo()
     func playNextVideo() {
         print("-/-/-/ PNV")
-        let notificationCenter = NotificationCenter.default
         // Clear everything
         layerManager.clearLayerAnimations(player: self.player!)
         for view in AerialView.sharedViews {
@@ -373,7 +449,7 @@ final class AerialView: ScreenSaverView, CAAnimationDelegate {
         }
 
         // remove old entries
-        notificationCenter.removeObserver(self)
+        self.clearNotifications()
 
         let player = AVPlayer()
         // play another video
@@ -445,22 +521,7 @@ final class AerialView: ScreenSaverView, CAAnimationDelegate {
             playerLayer.addObserver(self, forKeyPath: "readyForDisplay", options: .initial, context: nil)
         }
 
-        notificationCenter.addObserver(self,
-                                       selector: #selector(AerialView.playerItemDidReachEnd(_:)),
-                                       name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
-                                       object: currentItem)
-        notificationCenter.addObserver(self,
-                                       selector: #selector(AerialView.playerItemNewErrorLogEntryNotification(_:)),
-                                       name: NSNotification.Name.AVPlayerItemNewErrorLogEntry,
-                                       object: currentItem)
-        notificationCenter.addObserver(self,
-                                       selector: #selector(AerialView.playerItemFailedtoPlayToEnd(_:)),
-                                       name: NSNotification.Name.AVPlayerItemFailedToPlayToEndTime,
-                                       object: currentItem)
-        notificationCenter.addObserver(self,
-                                       selector: #selector(AerialView.playerItemPlaybackStalledNotification(_:)),
-                                       name: NSNotification.Name.AVPlayerItemPlaybackStalled,
-                                       object: currentItem)
+        self.setNotifications(currentItem);
         player.actionAtItemEnd = AVPlayer.ActionAtItemEnd.none
     }
 
