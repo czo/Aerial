@@ -408,6 +408,7 @@ final class AerialView: ScreenSaverView, CAAnimationDelegate {
         debugLog("\(self.description) stopAnimation")
         if !isDisabled {
             player?.pause()
+            player?.replaceCurrentItem(with: nil)
         }
 
         let preferences = Preferences.sharedInstance
